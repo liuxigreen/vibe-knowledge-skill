@@ -71,7 +71,7 @@ Deliver: `STYLE-BASE.md` + `style-base.yaml` + `DISTILL-GAP.md` + `notes/teardow
 8. `tools/award_score_check.py` numeric pass ≠ claim 获奖级. **勿宣称「获奖级」**：near-award process；Pass 仍要 densest 物证 + Gate 全绿。
 
 ## Progress / duration / mode
-UPGRADE.md + PROGRESS-LADDER. Full **5–15 min dense** (not slow). Densest 10s. Mode from ref first. silent → we-never.
+UPGRADE.md + PROGRESS-LADDER. Full length **by argument beats** (silent story often **~45s–3min**; no minute-padding). Densest 10s. Mode from ref first. silent → we-never.
 Story-lane full cuts still dense-edit（多拍），不是拖慢演戏；钩 ≤3–4s；典型叙事拍 ≤4–6s，但 **机制床长持计数** 允许作为单道具连续态（不算 ~20s 死停字卡）。
 
 ## Defaults

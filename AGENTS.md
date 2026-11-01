@@ -59,7 +59,7 @@ Pinned **git submodule**: [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/
 
 ## Workflow
 
-1. **Brief** — topic, narrative_mode, length (full cuts often 5–15 min dense; densest 10s first), language, any must-have facts. Ask once.
+1. **Brief** — topic, narrative_mode, length (silent story often ~45s–3min by argument beats — no padding; densest 10s first), language, any must-have facts. Ask once.
 2. **Treatment** — argument path + conflict→turn table (story/hybrid) before densest polish.
 3. **Densest 10s** — type ladder table + 3s motion list (+ conflict table for story). Ship frames / contact sheet.
 4. **Pre-score Gate G0–G7** + Award /55 ([`docs/AWARD-SCORECARD.md`](docs/AWARD-SCORECARD.md)). HUMAN-CHECK (+ 戏感三问 for story).

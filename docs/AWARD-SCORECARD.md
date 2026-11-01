@@ -136,7 +136,7 @@ Mode: <听轨一句> / <密帧一句>
 ### 渲染 / 时长
 
 - 截帧带 `?norun`（禁 RAF 与截帧同开）。  
-- 全片 **5–15 分钟** dense（优先约 6–8 分钟讲透）；densest 仍 10s。  
+- 全片时长 **随论证拍数**（Douyin silent 故事常约 **45s–3min**，多拍密剪）；**禁为凑分钟灌水**；densest 仍 10s。  
 - 钩 ≤3–4s；叙事拍 ≤4–6s；机制段 6–10s 须持续状态变。
 
 权威细则：`INFRAME-SHOW.md` · `DISTILL-MULTIDIM.md` · `PROGRESS-LADDER.md`。

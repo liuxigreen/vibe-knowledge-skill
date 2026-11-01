@@ -3,6 +3,7 @@
 > 每集相对上一集必须有 **可验升级点**。目标：叠满 **≥20 集** 才谈「新语法爆款概率」——技能保证进步曲线，不保证单集爆。
 
 ## 规则
+0. **时长：** 随论证拍数；Douyin silent 故事常约 45s–3min；**禁为凑分钟灌水**（沉没成本 7:00 已作为反例拒收）。densest 仍 10s。
 1. 开拍前写 `episodes/<slug>/UPGRADE.md`（缺则停）。
 2. 成片后追加本表一行。
 3. **理论族撞车**（陌生人听起来是同一句金句）→ 选题失败。已知：学习科学「越学越快≈划重点/测试效应」。
@@ -13,7 +14,7 @@
 | 理论族 | 新机制，非换皮旧机制 |
 | 工艺语法 | note-walk、榫卯生长、clip-plane、norun 稳字 |
 | 道具 N | ≥1 新寓言道具 |
-| 时长深度 | 全片 5–15 min（优先 6–8）讲透 |
+| 时长深度 | 随论证拍数讲透（silent 故事常约 45s–3min）；禁为凑分钟灌水 |
 | 硬失败清零 | 无频闪、无翻页感 |
 | 图内展示 | INFRAME-SHOW：≥70% 论证拍靠道具/标注；裁底栏仍懂 |
 
@@ -29,7 +30,7 @@
 | 07 | 增长路线图 | 习惯66天 | transit-map | 线路生长 |
 | 08 | Agent交接 | ReAct/工具 | desktop-flythrough | 交接票/环 |
 | 09 | 宜家效应 | Norton et al. 2012 宜家效应 | story ShelfBed+ValueDial | KEEP 人物故事语法·新理论族；densest 12s 46/55 pass；D=5 距渗流 | 2026-11-01 |
-| 10 | 沉没成本 | Arkes & Blumer 1985 沉没成本谬误 | story CinemaSeatBed+TicketStub | KEEP 人物故事语法·新理论族；densest 12s 47/55 pass；D=5 距渗流+宜家；宜家仍 parked | 2026-11-01 |
+| 10 | 沉没成本 | Arkes & Blumer 1985 沉没成本谬误 | story CinemaSeatBed+TicketStub | densest 12s 47/55；**7:00 全片过长已拒**→应按 45s–3min 重剪；宜家仍 parked | 2026-11-01 |
 
 ## 20 集冲刺假设
 - 集 1–5：打穿 Award + 硬失败纪律（频闪/翻页/norun）。

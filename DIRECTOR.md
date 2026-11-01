@@ -10,7 +10,7 @@ Defaults for this series:
 
 - Douyin vertical **1080×1920** unless STYLE.md locks landscape (some distill refs are 1920×1080 — follow STYLE.md).
 - Prefer **silent_text_first** when the reference has no VO; use `we-never` BGM bed.
-- Full episode **dense 5–15 min** (not slow TV pacing); densest proof is **10s**.
+- Full cut length **follows argument beats** (Douyin silent story often **~45s–3min**, dense many-beats — not slow TV; **no minute-padding**). Densest proof is **10s**.
 - Score with [`docs/AWARD-SCORECARD.md`](docs/AWARD-SCORECARD.md) only.
 
 Ask once: topic facts, must-appear names, narrative_mode guess, whether they want densest review before full.

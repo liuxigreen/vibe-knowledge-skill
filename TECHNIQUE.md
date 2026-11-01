@@ -2,6 +2,7 @@
 
 Code-driven pages and tools — **no stock explainer kits as the lecture**. Pair with [`DIRECTOR.md`](DIRECTOR.md) and one `styles/<slug>/STYLE.md`.
 
+- **Duration:** Length follows argument beats: Douyin silent story cuts often land about **45s–3min** (dense many-beats, not slow TV). **No padding to hit a minute target.** Densest proof stays **10s**.
 ```
 topic → narrative_mode lock → distill/KEEP
    → densest 10s (frames + tables)

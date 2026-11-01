@@ -15,7 +15,7 @@ Every new topic must beat the last shipped episode on **at least one** axis, wri
 1. **Theory-family** — not the same mechanism family as a recent episode (see collision ban).
 2. **Craft upgrade** — new base family, or same family with a named grammar leap (e.g. note-walk, clip-plane pour, HUD→prop).
 3. **Prop novelty (N)** — ≥1 new allegory prop vs last same-family ep.
-4. **Explain depth** — full cut target **5–15 min** (prefer ~6–8); densest Gate stays 10s.
+4. **Explain depth** — enough beats to teach the mechanism (silent story often **~45s–3min**); **no padding to hit minutes**; densest Gate stays 10s.
 
 Maintain `$LIB/docs/PROGRESS-LADDER.md` (episode #, theory family, craft leap, what failed last time). Aim for **≥20 shipped episodes** so leaps compound into a house style that can break out — not automatic 爆款; distribution/taste still human.
 

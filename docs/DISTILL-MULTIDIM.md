@@ -58,7 +58,7 @@ Gate 字段：`crop-bottom mute: pass|fail`
 
 ### D7 · 节奏与时长（Beat density）
 - 钩 ≤3–4s；叙事拍典型 ≤4–6s；禁 ~20s 单行 dwell。
-- 参考全长 vs 我们目标全片（5–15 min dense）如何加密拍而非拖慢。
+- 参考全长 vs 我们目标：随论证拍数（silent 故事常约 45s–3min）**加密拍而非拖慢/灌水**。
 - 文案吸睛句 / 开场钩子原文摘录（X/H 评分锚）。
 
 ### D8 · BANNED twin list（Distance）
