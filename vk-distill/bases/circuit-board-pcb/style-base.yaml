@@ -1,0 +1,50 @@
+# circuit-board-pcb — Lemo circuit-board replica-grade base (2D top-down PCB, layered compositing)
+id: circuit-board-pcb
+version: 2
+craft: circuit-board
+renderer: canvas2d-layered   # NOT three.js perspective — the template forbids perspective
+accent_hue: {opencv_lo: 8, opencv_hi: 28}
+series_tag: "Vibe知识大赏 · 电路板"
+canvas: {w: 1920, h: 1080, fps: 30}
+palette:
+  bg_top:    "#1C6A44"   # copper pour under green mask (dominant)
+  bg_bottom: "#05190F"   # bare laminate / clearance channels
+  bg_glow:   "#2B8158"   # trace fill
+  laminate:  "#05190F"
+  pour:      "#1C6A44"
+  rim:       "#4AA977"
+  trace:     "#2B8158"
+  gold:      "#D9B25B"
+  enig_soft: "#617755"   # ENIG pad AA over mask (anti-alias mid)
+  silk:      "#F2EEE1"
+  accent:    "#FFBE54"
+  accent_hot: "#FFECB4"
+  water:     "#AAD6E2"
+  ink:       "#F2EEE1"
+  muted:     "#BFD3C5"
+  plate:     "#0A1F15"
+  desk:      "#0B0D0C"
+  danger:    "#E0533A"
+type:
+  label_cn: {family: "Noto Sans SC", weight: 500, size: [44, 96]}
+  label_en: {family: "Routed (Lemo font.js)", cap_ratio: 0.42}
+  designator: {family: "Routed", cap: [14, 22]}
+  subtitle: {family: "Noto Sans SC", weight: 600, size: 40, plate: "rgba(6,20,13,0.72)", band_y: [930, 1005]}
+  footnote: {family: "Noto Sans SC", weight: 500, size: 22, y: 1040}
+light: {blur_wide: 24, blur_tight: 5, wide_alpha: 0.9, tight_alpha: 0.85, half_res_glow: true}
+post: {dof_band: [0.12, 0.24], motes: 26, vignette: 0.58, grain: 5, key_light_drift: true}
+camera: {topdown: true, max_roll_deg: 4, moves: [ride, rise, crash, macro_hold, whip, matched_cut, plunge, pullout]}
+motion: {enter: {plot_rate_chars_s: 14}, max_static_s: 3.0, live_meters: true}
+density: {props_per_beat: [2, 4], max_keyword_chars: 14}
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck: {threshold: 0.02, ratio: 8, attack_ms: 20, release_ms: 400}

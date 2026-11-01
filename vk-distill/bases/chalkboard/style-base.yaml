@@ -1,0 +1,25 @@
+id: chalkboard
+version: 1
+craft: chalkboard
+series_tag: Vibe知识大赏 · 黑板课
+engine: lemo-opuscar/styles/chalkboard/demo (MIT, Copyright (c) 2026 LemoLab)
+canvas: {w: 1920, h: 1080, fps: 30}
+world: {wall_w: 6400, board_h: 1700, panels: [FL, FR, BK], panel_w: 3200}
+palette: {slate: '#21312A', chalk: '#ECEAE0', accent: '#E8893A', second: '#E6D58A', grid: '#8C8A6E', muted: '#B9B7A8', sub_plate: '#0a0f0c', sub_text: '#F3EFE4', bg_top: '#102019', bg_bottom: '#12211A'}
+accent_hue: {opencv_lo: 8, opencv_hi: 22}
+type:
+  subject: {family: chalk-stroke, size_u: [200, 380]}
+  label: {family: chalk-stroke, size_u: [60, 110]}
+  latin: {family: EMS Delight, size_u: [40, 90]}
+  subtitle: {family: LXGW WenKai, size: 38}
+  footnote: {family: chalk-stroke, size_u: 40, color: muted}
+motion:
+  write_lead_s: [0.1, 0.3]
+  new_element_every_s: [2, 4]
+  max_static_s: 3.0
+  camera: {frontal: true, close_s: [1.3, 2.2], medium_s: [0.8, 1.0], wide_s: 0.55, dolly_s: [2, 4], whip_s: 0.35}
+  required: [write-wipe-rewrite, cross-panel-accent-path, wide-shot, panel-slide-or-reveal]
+density: {props_per_beat: [2, 4], max_keyword_chars: 12, numbers_need_footnote: true}
+forbidden: [fade-in text, overlay cards, emoji, drop shadows, 3D rotation, second accent hue, black slate]
+structure: [生活钩子, 机制, 反直觉, 升华, 行动+CTA]
+bgm: {title: we never, path: /workspace/vk-distill/assets/bgm/we-never.mp3, loop: true, under_voice_lu: -20}

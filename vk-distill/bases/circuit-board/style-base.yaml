@@ -1,0 +1,83 @@
+# style-base · Circuit Board（Lemo-Opuscar 工艺蒸馏，非暗金底座）
+# Craft notes from /workspace/lemo-opuscar/styles/circuit-board/STYLE.md
+# Visual language: FR-4 green solder mask, copper pour + clearances, ENIG gold pads/vias,
+# off-white silkscreen, amber CURRENT as the only saturated pointing hue. Melody = light on copper.
+# Do NOT reuse moyou-darkgold-music charcoal/navy cards.
+id: circuit-board
+version: 1
+craft: circuit-board
+accent_hue: {opencv_lo: 8, opencv_hi: 28}  # amber current
+series_tag: "Vibe知识大赏 · 电路板"
+canvas: {w: 1920, h: 1080, fps: 30}
+
+palette:
+  # background = laminate (dark FR-4). Keep V low so green doesn't trip single-accent QA.
+  bg_top:    "#05190F"
+  bg_bottom: "#0A2218"
+  bg_glow:   "#123028"
+  laminate:  "#05190F"
+  pour:      "#1A3D2E"   # copper pour under mask (desaturated)
+  rim:       "#2E5644"   # bevelled copper rim
+  gold:      "#D9B25B"   # ENIG pads / vias
+  silk:      "#F2EEE1"
+  accent:    "#FFBE54"   # amber CURRENT — the ONE pointing hue
+  accent_dim: "#7A5524"
+  ink:       "#F2EEE1"   # silkscreen / headlines
+  muted:     "#8FA89A"   # designators, footnotes
+  bar:       "#243B30"   # unlit trace body
+  compare_a: "#7A9AA8"   # silver-cyan second flow (kept muted)
+  compare_b: "#D9B25B"
+
+type:
+  headline: {family: "VKSans", weight: 900, size: 96, line: 1.18, tracking: 0.02}
+  card:     {family: "VKSans", weight: 900, size: 120}
+  kicker:   {family: "VKSans", weight: 800, size: 36, color: accent}
+  label:    {family: "VKSans", weight: 800, size: 42}
+  number:   {family: "VKMono", weight: 800}
+  footnote: {family: "VKSans", weight: 500, size: 24, color: muted}
+  subtitle: {family: "VKSans", weight: 700, size: 48, color: ink, band_y: [900, 1000], stroke: "#05190F"}
+
+layout:
+  safe: {x: 110, y: 70}
+  kicker_xy: [120, 108]
+  headline_xy: [120, 250]
+  chart_box: [880, 380, 920, 460]
+  footnote_xy: [120, 1048]
+
+line:
+  stroke: 4
+  dash: [10, 8]
+  glow: {blur: 12, opacity: 0.6}
+
+motion:
+  enter: {ease: power3.out, dur: 0.5, stagger: 0.06}
+  exit:  {dur: 0.3}
+  max_static_s: 3.0
+  live_meters: true
+
+density:
+  props_per_beat: [2, 4]
+  max_keyword_chars: 14
+  numbers_need_footnote: true
+
+forbidden:
+  - dark-gold charcoal HUD cards
+  - flat grey/orange WaveBars spectrum (use TraceMelody / copper vias)
+  - particle soup
+  - emoji
+  - copying other channels' series names
+  - perspective circuit "cities"
+
+structure: [生活钩子, 机制, 反直觉, 升华, 行动+CTA]
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck: {threshold: 0.02, ratio: 8, attack_ms: 20, release_ms: 400}

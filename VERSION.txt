@@ -1,0 +1,4 @@
+vibe-knowledge-full-install
+date: 2026-11-01
+edition: ALL-IN-ONE (fonts + BGM + current skills/docs/bases)
+changelog: story_scene G7 + STORY-SCENE-CRAFT + moyou-story-percolation; Award polish; PLUS assets/fonts (NotoSansSC, NotoSerifSC, GeistMono) + assets/bgm/we-never.mp3 — no need for the Oct 31 zip

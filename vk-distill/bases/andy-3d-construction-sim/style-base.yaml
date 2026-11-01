@@ -1,0 +1,106 @@
+# style-base · 安迪 3D 施工进度模拟（桥墩/围堰/架梁）
+# Distilled from /workspace/vk-bridge-pier/ref (安迪的 AI 日记《水里的桥墩是怎么建的》)
+# Visual grammar only; series tag and copy are ours. Do not claim reference's specific bill numbers.
+id: andy-3d-construction-sim
+version: 1
+craft: 3d-construction-sim
+series_tag: "Vibe知识大赏 · 施工模拟"
+canvas: {w: 1920, h: 1080, fps: 30}
+source_canvas: {w: 1024, h: 576, fps: 30}
+
+palette:
+  sky_day:     "#C8D4E0"
+  sky_dusk:    "#E8C48A"
+  sky_night:   "#0A1228"
+  water:       "#4A6A6A"
+  water_cut:   "#3A6A5A"   # translucent section volume
+  concrete:    "#B8B8B0"
+  steel:       "#2A2E32"
+  steel_rust:  "#4A3A30"
+  machine:     "#E87820"
+  machine_alt: "#F0C020"
+  accent:      "#FF6A28"   # day counter + keyword highlight — the ONE pointing hue
+  hud_ink:     "#F4F4F0"
+  hud_dim:     "#A8B0BC"
+  blueprint_bg:"#0A1A3A"
+  wire:        "#E8F0FF"
+  soil_a:      "#C4A878"
+  soil_b:      "#8A6A48"
+  soil_rock:   "#5A5048"
+  desk_warm:   "#3A2A18"
+
+type:
+  headline: {family: "VKSans", weight: 900, size: 64, line: 1.2}
+  subtitle_zh: {family: "VKSans", weight: 800, size: 48, color: hud_ink}
+  subtitle_en: {family: "VKSans", weight: 500, size: 28, style: italic, color: hud_dim}
+  day_counter: {family: "VKSans", weight: 900, size: 56, color: accent}
+  day_meta: {family: "VKMono", weight: 600, size: 22, color: hud_ink}
+  phase_badge: {family: "VKSans", weight: 800, size: 28}
+  stats: {family: "VKSans", weight: 600, size: 26, color: hud_ink}
+  number: {family: "VKMono", weight: 800, color: accent}
+  callout: {family: "VKSans", weight: 700, size: 24}
+
+layout:
+  safe: {x: 48, y: 36}
+  phase_xy: [48, 36]          # top-left badge
+  day_xy: [1520, 36]          # top-right day counter (1080p)
+  stats_xy: [48, 820]         # bottom-left 3-line tally
+  subtitle_band_y: [920, 1040]
+  bill_box: [120, 80, 900, 520]
+
+hud:
+  phase_badge: true
+  day_counter: true
+  stats_panel: true
+  bilingual_subs: true
+  live_tickers: true          # day + m³ + 根数 must animate
+  keyword_orange: true
+
+camera:
+  default: aerial_oblique_45
+  tilt_shift: {enabled: true, band_norm: 0.22, coc_px: 18}
+  section_cutaway: {clipping_plane: true, show_soil_layers: true}
+  hero_low: {use_for: [pull_piles_dusk, night_open]}
+  max_static_s: 3.0
+
+motion:
+  growth: [instance_pop, extrude_axis, drop_vertical]  # not dissolve
+  crane_motion_blur: true
+  day_scrub: true             # day number continuous with construction
+  enter: {ease: power2.out, dur: 0.45}
+  exit:  {dur: 0.25}
+
+density:
+  props_per_beat: [3, 6]
+  max_keyword_chars: 18
+  numbers_need_on_screen: true
+
+structure: [夜桌钩子, 图纸抬升, 工序时间线, 诗意还河, 夜灯+账单]
+
+forbidden:
+  - flat 2D infographic with no growing 3D mass
+  - missing day counter or material ticker
+  - dark-gold serif card style (moyou/xiaomo)
+  - emoji
+  - claiming reference bill figures as our facts
+  - photoreal dirty documentary grade that kills readability
+
+# Feasibility note (box): no GPU; software GL (SwiftShader) or Blender CPU.
+# Prefer three.js headless Chrome for HUD+simple scene; Blender EEVEE/Cycles CPU for long-form quality.
+render_hint:
+  short_poc: threejs_swiftshader
+  long_form: blender_cpu_or_external_gpu
+  lemo_craft_refs: [tilt-shift, white-model, blueprint, hologram-hud]
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck: {threshold: 0.02, ratio: 8, attack_ms: 20, release_ms: 400}
+  # Reference track ≈112.3 BPM — same ballpark as we-never; beat-sync still applies if we add 云希.

@@ -1,0 +1,147 @@
+id: game-show
+version: 1
+craft: game-show
+series_tag: Vibe知识大赏 · 节奏综艺
+engine: SVG DOM, pure render(t), Lemo video.mjs (no WebGL); helpers ported from lemo-opuscar/styles/game-show/demo
+canvas:
+  w: 1920
+  h: 1080
+  fps: 30
+tempo:
+  bpm: 112.36
+  first_downbeat: 0.4
+  grid: build/music/beatgrid.json
+palette:
+  bg_top: '#FFD23F'
+  bg_bottom: '#E0A92A'
+  ink: '#1B1B1B'
+  cream: '#FFF6E5'
+  white: '#FFFFFF'
+  yellow: '#FFD23F'
+  orange: '#FF8C42'
+  red: '#FF5A5F'
+  pink: '#FF8FB1'
+  green: '#5BD68A'
+  lime: '#C6F16D'
+  sky: '#8ED1FC'
+  blue: '#4D7CFE'
+  purple: '#6B4FBB'
+  teal: '#3FB8AF'
+  navy: '#26264A'
+  sub_plate: '#1B1B1B'
+  yellow_pat: '#FFDE6B'
+  yellow_floor: '#E0A92A'
+  sky_pat: '#A6DBFD'
+  sky_floor: '#5FA8D8'
+  orange_pat: '#FFA263'
+  orange_floor: '#D96A26'
+  blue_pat: '#6890FE'
+  blue_floor: '#3358C9'
+  green_pat: '#79DFA0'
+  green_floor: '#3BA868'
+  pink_pat: '#FFA6C1'
+  pink_floor: '#D9668A'
+  purple_pat: '#7E65C6'
+  purple_floor: '#4E3696'
+  navy_pat: '#33335E'
+  navy_floor: '#1A1A36'
+  skin: '#FFD1A8'
+sets:
+  yellow:
+  - '#FFD23F'
+  - '#FFDE6B'
+  - '#E0A92A'
+  sky:
+  - '#8ED1FC'
+  - '#A6DBFD'
+  - '#5FA8D8'
+  orange:
+  - '#FF8C42'
+  - '#FFA263'
+  - '#D96A26'
+  blue:
+  - '#4D7CFE'
+  - '#6890FE'
+  - '#3358C9'
+  green:
+  - '#5BD68A'
+  - '#79DFA0'
+  - '#3BA868'
+  pink:
+  - '#FF8FB1'
+  - '#FFA6C1'
+  - '#D9668A'
+  purple:
+  - '#6B4FBB'
+  - '#7E65C6'
+  - '#4E3696'
+  navy:
+  - '#26264A'
+  - '#33335E'
+  - '#1A1A36'
+type:
+  telop_cjk:
+    family: Noto Sans SC
+    weight: 900
+    stroke_ratio: 0.14
+  telop_latin:
+    family: Fredoka
+    weight: 700
+  subtitle:
+    family: Noto Sans SC
+    weight: 900
+    size: 44
+    plate: ink pill
+    fill: '#FFFFFF'
+    y:
+    - 928
+    - 1004
+  footnote:
+    family: Noto Sans SC
+    weight: 700
+    size: 20
+    y: 1046
+motion:
+  hop_px:
+  - 8
+  - 30
+  squash_s: 0.35
+  cut: hard on bar line + 0.08s white flash
+  punch:
+  - 0.008
+  - 0.05
+  max_static_s: 3.0
+  required:
+  - hop-on-beat
+  - drop-in-on-beat
+  - back-ease-pop
+  - judgement-word
+  - round-card
+  - bar-cut-flash
+density:
+  props_per_beat:
+  - 2
+  - 4
+  max_keyword_chars: 12
+  numbers_need_footnote: true
+forbidden:
+- gradients
+- blur
+- soft shadows
+- texture
+- camera travel
+- dissolves
+- slow fades
+- logos
+- percent signs on screen
+structure:
+- 生活钩子
+- 机制
+- 反直觉
+- 升华
+- 行动+CTA
+bgm:
+  title: we never
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  loop: true
+  under_voice_lu: -20

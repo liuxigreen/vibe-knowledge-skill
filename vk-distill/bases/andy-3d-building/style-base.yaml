@@ -1,0 +1,95 @@
+# style-base · 安迪 3D 建房一生（草图→施工→入住→第一年）
+# Distilled from /workspace/vk-distill/refs/andy-building (安迪的 AI 日记《一张草图，盖成一栋楼》)
+# Visual grammar only. Our copy/numbers must be our own.
+id: andy-3d-building
+version: 1
+parent: andy-3d-construction-sim      # same creator, same HUD family
+craft: 3d-construction-sim
+mode: silent-text-first               # source has 0 VO segments (faster-whisper), BGM only
+canvas: {w: 1920, h: 1080, fps: 30}   # deliver vertical per series rules if required
+source_canvas: {w: 1024, h: 576, fps: 30, duration_s: 60.8, hard_cuts: 0}
+
+palette:
+  desk_wood:   "#8A4A22"
+  paper:       "#E9E2D6"
+  pencil:      "#5A6A8A"
+  cad_bg:      "#0C0F16"
+  cad_line:    "#CFE0FF"
+  grass:       "#5E9A3A"
+  soil:        "#C07848"
+  soil_dark:   "#9A5A36"
+  brick:       "#C4542E"
+  mortar:      "#D8C8B0"
+  scaffold_pipe: "#9AA0A6"
+  scaffold_board: "#D8B060"
+  safety_net:  "#2E9A4E"
+  concrete:    "#B8B8B4"
+  roof_tile_wip: "#C06A3A"
+  roof_tile:   "#3E4450"
+  render_white: "#EDEBE6"
+  trim:        "#3A3A3E"
+  night_sky:   "#0A0E1E"
+  window_glow: "#FFE8B0"
+  dusk_a:      "#F0B080"
+  dusk_b:      "#6A3A5A"
+  festive_red: "#C8281E"
+  xray_glass:  "#E8F2FF"
+  conduit:     "#FF8A3A"
+  water_pipe:  "#4A8AFF"
+  accent:      "#FF6A3A"     # the ONE pointing hue: day number, keyword, chip badge
+  hud_ink:     "#F4F4F0"
+  hud_dim:     "#9AA0AA"
+
+type:
+  chip_num:     {family: VKMono, weight: 800, size: 22, bg: accent, color: "#1A1A1A"}
+  chip_zh:      {family: VKSans, weight: 800, size: 30, color: hud_ink}
+  chip_en:      {family: VKMono, weight: 500, size: 16, tracking: 0.3em, color: hud_dim}
+  verb_tag:     {family: VKMono, weight: 800, size: 18, color: accent}   # READ / STRAIGHTEN
+  day_num:      {family: VKSans, weight: 900, size: 72, color: accent}
+  day_meta:     {family: VKMono, weight: 500, size: 18, tracking: 0.2em, color: hud_dim}  # DAY 046 · 10:00
+  task_zh:      {family: VKSans, weight: 700, size: 26, color: hud_ink}  # 砌筑 · 二层
+  counter_num:  {family: VKMono, weight: 800, size: 34, color: hud_ink}
+  counter_lbl:  {family: VKSans, weight: 600, size: 20, color: hud_dim, en_micro: 10}
+  sub_zh:       {family: VKSans, weight: 800, size: 44, color: hud_ink, highlight: accent}
+  sub_en:       {family: Serif, style: italic, size: 22, color: hud_dim, opacity: 0.7}
+  callout:      {family: VKSans, weight: 700, size: 18, bg: "rgba(16,18,24,.72)", radius: 6}
+  tally_num:    {family: VKMono, weight: 900, size: 56, color: hud_ink, last_row_color: accent}
+
+hud_layout:
+  top_left:    "chapter chip: [NN] 中文 ENGLISH + optional verb row"
+  top_right:   "第 N 天 / DAY NNN · HH:MM / 工序 · 楼层  → later 季节牌"
+  bottom_left: "running counters (bricks/rebar/concrete…) tied to geometry"
+  bottom_center: "zh subtitle (1 orange keyword) + italic EN line; 4–18 字/屏"
+  in_scene:    "capsule callouts pinned to elements; legend panel in X-ray"
+  safe_margin_px: 48
+
+chapters:   # proportion of 60s; scale to target length
+  - {id: drawings,   share: 0.16, beats: [prompt_typing, sketch_read, line_straighten, cad_sheet_fan]}
+  - {id: foundation, share: 0.15, beats: [plan_drop_to_ground, excavate, rebar_night, pour]}
+  - {id: structure,  share: 0.18, beats: [brick_macro_instanced, slab, scaffold_grow, floors_x3, roof]}
+  - {id: topping,    share: 0.08, beats: [dusk_flag_firecracker, xray_mep, facade_reveal]}
+  - {id: move_in,    share: 0.15, beats: [night_lights, exploded_storeys, regroup]}
+  - {id: year_one,   share: 0.28, beats: [autumn_leaves, first_snow, new_year_fireworks, tally_card, door_walk_in, loop_to_desk]}
+
+growth_grammar:
+  primary: instanced_ordered_reveal     # mesh.count / per-instance threshold; counter == count
+  secondary: [floor_group_stack, plane_fill_pour, scaffold_follow_height, line_geometry_hud_to_world]
+  modes: [xray_translucent_with_glow_paths, exploded_vertical_storeys]
+  machines: [excavator, mixer_truck]    # no tower crane in this ref
+
+camera:
+  continuous_take: true
+  moves: [slow_orbit, crane_up, macro_dolly_wall, push_through_door]
+  elevation_deg: [30, 50]
+  dof: light            # user prefers sharp; avoid poc2 heavy tilt (use ?tilt=0 or small kernel)
+  transitions: [lighting_change, cad_dark_bg, night_purple, xray, explode]
+
+pacing:
+  duration_s: 60
+  subtitles: ~12 lines, 4–5s each
+  day_counter: {from: 0, to: 180, window_s: [10, 44]}
+  hook_s: 2            # prompt typing line = full promise
+
+audio: {vo: none, bgm: "we never", sfx: optional (firecrackers, fireworks)}
+
+do_not_copy: [source bill-of-quantities numbers, "Claude 17,536 行 brag", "湖南均价脚注", exact house design]

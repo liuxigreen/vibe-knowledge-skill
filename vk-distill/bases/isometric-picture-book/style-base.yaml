@@ -1,0 +1,25 @@
+id: isometric-picture-book
+version: 1
+craft: isometric-picture-book
+series_tag: Vibe知识大赏 · 等距绘本
+engine: three.js r1xx (MeshBasicMaterial flat tones) in headless Chrome SwiftShader; render_frames.mjs resumable JPEG frames
+canvas: {w: 1920, h: 1080, fps: 30}
+camera: {az_deg: [37, 53], el_deg: [28, 40], fov_deg: [14, 22], drift_zoom: [0.06, 0.08]}
+palette: {paper: '#F1E8D8', bg_top: '#F1E8D8', bg_bottom: '#ECE3D3', concrete: '#E9E0CF', ink: '#2A2E29', accent: '#D0573A', green: '#3D6B59', green_lt: '#A7C2B2', ginger: '#E2AE3A', ochre: '#C98A4B', fog: '#7F9DB8', violet: '#8E86A6', oat: '#D9C7A3', jam1: '#9E3B3B', jam2: '#6E4A6B', umber: '#6B5A48', sub_plate: '#FBF7EE'}
+accent_hue: {opencv_lo: 3, opencv_hi: 14}
+face_tones: {top: ['#FFF7E6', 0.22], dark: ['#22192A', 0.26]}   # STYLE-BASE: three flat tones per solid (film tri())
+type:
+  floor_big: {family: Noto Serif SC, weight: 700, size_m: 1.5}
+  floor_small: {family: Noto Serif SC, weight: 600, size_m: 0.8}
+  subtitle: {family: Noto Serif SC, weight: 700, size: 40}
+  footnote: {family: Noto Serif SC, weight: 600, size: 20}
+motion:
+  char_land_s: 0.14
+  new_element_every_s: [2, 4]
+  max_static_s: 3.0
+  walk_mps: [1.2, 1.6]
+  required: [floor-type-landing, lid-off-or-rise-to-wide, order-lighting, ground-travel-between-zones]
+density: {props_per_beat: [2, 4], max_keyword_chars: 14, numbers_need_footnote: true}
+forbidden: [drop shadows, gradients, outlines, glow, emoji, lens-facing cards, second accent hue, dark background]
+structure: [生活钩子, 机制, 反直觉, 升华, 行动+CTA]
+bgm: {title: we never, path: /workspace/vk-distill/assets/bgm/we-never.mp3, loop: true, under_voice_lu: -20}

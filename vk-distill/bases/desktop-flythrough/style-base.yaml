@@ -1,0 +1,120 @@
+id: desktop-flythrough
+version: 1
+craft: desktop-flythrough
+series_tag: Vibe知识大赏 · Agent桌面
+canvas:
+  w: 1920
+  h: 1080
+  fps: 30
+palette:
+  bg_top: '#D8C4A8'
+  bg_bottom: '#C9B496'
+  bg_glow: '#E8E4E6'
+  paper: '#E2E8F5'
+  paper_dot: '#C4CDE3'
+  card: '#FBFCFE'
+  accent: '#2F5BFF'
+  accent_dim: '#A8B8F0'
+  ink: '#171C2E'
+  muted: '#2F3648'
+  bar: '#D0D6E4'
+  success: '#3FA57A'
+  danger: '#E2483D'
+  support: '#E8A04A'
+  compare_a: '#5FB4E8'
+  compare_b: '#8A5A9E'
+accent_hue:
+  opencv_lo: 100
+  opencv_hi: 135
+type:
+  headline:
+    family: VKSans
+    weight: 900
+    size: 92
+    line: 1.18
+    tracking: 0.02
+  card:
+    family: VKSans
+    weight: 800
+    size: 64
+  kicker:
+    family: VKSans
+    weight: 800
+    size: 34
+    color: accent
+  label:
+    family: VKSans
+    weight: 800
+    size: 40
+  number:
+    family: VKMono
+    weight: 800
+  footnote:
+    family: VKSans
+    weight: 500
+    size: 24
+    color: muted
+  subtitle:
+    family: VKSans
+    weight: 700
+    size: 44
+    color: ink
+    band_y:
+    - 900
+    - 1000
+    stroke: '#E2E8F5'
+layout:
+  safe:
+    x: 110
+    y: 70
+  kicker_xy:
+  - 120
+  - 100
+  headline_xy:
+  - 120
+  - 220
+  footnote_xy:
+  - 120
+  - 1048
+motion:
+  enter:
+    ease: power3.out
+    dur: 0.5
+    stagger: 0.06
+  exit:
+    dur: 0.3
+  max_static_s: 3.0
+  live_meters: true
+density:
+  props_per_beat:
+  - 2
+  - 4
+  max_keyword_chars: 16
+  numbers_need_footnote: true
+forbidden:
+- dark charcoal + amber gold HUD (that is moyou-darkgold-music)
+- flat gray cards without thickness/shadow
+- neon accents
+- real app logos / brand chrome
+- emoji
+structure:
+- 生活钩子
+- 机制
+- 反直觉
+- 升华
+- 行动+CTA
+bgm:
+  title: we never
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck:
+    threshold: 0.02
+    ratio: 8
+    attack_ms: 20
+    release_ms: 400

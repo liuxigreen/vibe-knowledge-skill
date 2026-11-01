@@ -1,0 +1,93 @@
+# style-base · countdown-split「倒计时分屏 / 预计 vs 实际」
+# Distilled from /workspace/lemo-opuscar/styles/countdown (STYLE.md + DEMO.md + demo/stills, 1fps gate
+# frames in /workspace/vk-distill/gate_refs/countdown). Adapted for a no-footage knowledge film:
+# camera cells hold drawn SVG "feeds" (desk, document, dot grid, bars) instead of video.
+id: countdown-split
+version: 1
+lineage: [lemo-opuscar/countdown, vibe-knowledge]
+series_tag: "Vibe知识大赏 · 时间×心理"
+canvas: {w: 1920, h: 1080, fps: 30}
+ref:
+  folder: /workspace/vk-distill/gate_refs/countdown
+  style_md: /workspace/lemo-opuscar/styles/countdown/STYLE.md
+  demo_md: /workspace/lemo-opuscar/styles/countdown/DEMO.md
+
+palette:
+  bg_top:    "#06080A"   # ground (gutters / margins)
+  bg_bottom: "#0E1318"   # cell panel
+  line:      "#2C343B"   # 1px cell border (ref rgba(222,232,238,.16) on #06080A)
+  ink:       "#F2F5F7"
+  muted:     "#8C979D"
+  accent:    "#FF5B1F"   # sync / active / T−  (the one pointing hue)
+  accent_dim: "#5A2412"
+  danger:    "#FF3B30"   # "actual" / overrun / speaking light
+  paper:     "#E8E4DA"   # document feed (cited paper)
+  paper_ink: "#14181C"
+
+accent_hue: {opencv_lo: 3, opencv_hi: 16}
+
+type:
+  clock:    {family: "Barlow Condensed", weight: 700, size: 132, fixed_slot: true}
+  cell_big: {family: "Barlow Condensed", weight: 700, size: 180}
+  chip:     {family: "IBM Plex Mono", weight: 600, size: 20, tracking: 0.08}
+  chip_cn:  {family: "VKSans", weight: 700, size: 24}
+  label:    {family: "VKSans", weight: 800, size: 44}
+  headline: {family: "VKSans", weight: 900, size: 92, line: 1.15}
+  card:     {family: "VKSans", weight: 900, size: 120}
+  subtitle: {family: "VKSans", weight: 800, size: 46, color: ink, band_y: [920, 1015], box: transcript}
+  footnote: {family: "VKSans", weight: 500, size: 22, color: muted}
+
+layout:
+  margin: 24
+  gutter: 8
+  top_area: [24, 24, 1872, 820]     # camera cells live here
+  clock_cell: [24, 852, 616, 204]   # bottom-left: T−/T+ clock + control strip
+  transcript: [648, 852, 1248, 204] # bottom-right: speaking light + current line + footnote
+  presets: {full: 1, L2/R2: 2, BL+RT+RB: 3, q1..q4: 4, s1..s6: 6, T/B bands: 2}
+  corner_radius: 0
+
+line: {stroke: 1, active_stroke: 3, dash: [10, 8]}
+
+motion:
+  relayout: {ease: easeInOutCubic, dur: 0.34}     # the layout IS the edit
+  cell_open: {from: left, dur: 0.34, flash: "3px accent, 0.5s"}
+  clock_tick: "digits change in fixed slots; tenths + 10-seg sub-second bar always moving"
+  zero: "cells merge to one full cell; clock inverts (accent block, dark digits, T+)"
+  readouts: "numbers appear only when settled (no rolling digits except Counter type)"
+  max_static_s: 3.0
+
+density:
+  props_per_beat: [2, 5]
+  max_keyword_chars: 16
+  numbers_need_footnote: true
+
+forbidden:
+  - rounded corners, drop shadows, glows on cells
+  - centered floating titles over empty background (text lives in cells / flags / transcript)
+  - a second pointing hue (orange points; red = actual/overrun only)
+  - rolling intermediate numbers (except Counter)
+  - emoji
+  - same primary prop two beats in a row
+  - dark sparse frames: every frame ≥ 2 lit cells or one full lit card
+
+structure: [生活钩子, 导览, 机制, 反直觉, 机制, 行动指引, 升华, 行动+CTA]
+
+hud:
+  control_strip: {segments: ["预计 PLANNED", "执行 DOING", "超时 OVERTIME"], pos: clock_cell}
+  chips: {format: "■ CAM n  中文  EN", dot: {synced: accent, idle: muted}}
+
+props_allowed: [DeskCam, Promise, FlashClock, Clock, SerifTitleCard, Roadmap, PaperDoc, DotGrid, CheckList,
+  StandbyGrid, Counter, TimeAxis, SplitDays, Readout, Overrun, ZeroCard, ThinkCam, BarRows, Confidence,
+  PlanReel, ExcuseTags, DiscountTag, GroupSplit, BiasGauge, EventFlag, LogTable, PlanBlocks, TwoSelves, CtaCard]
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck: {threshold: 0.02, ratio: 8, attack_ms: 20, release_ms: 400}

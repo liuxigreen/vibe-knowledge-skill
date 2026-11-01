@@ -1,0 +1,243 @@
+# style-base · 电子智人《信息论·惊奇之学》→ grammar lock ONLY
+# Anti-copy: BANNED twins listed; invent new surprisal metaphor / gadget / callback.
+# We do NOT have the author's prompt. Public teardown: NavXD showcase only.
+id: dianzi-info-surprisal
+version: 1.1  # 2026-10-31 multidim patch: type ladder + motion + inframe gate + knowledge易杠
+lineage: [vibe-knowledge/silent-text-first, 电子智人·信息论惊奇之学·grammar-only]
+series_tag: "Vibe知识大赏 · 硬科学×惊奇量"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+
+ref:
+  folder: null   # no private full-video dump required for this distill
+  public_teardown: https://navxd.com/prompt-template-library/showcase/vibe-information-theory
+  short_url: https://v.douyin.com/eqDLsaHG5tI/
+  author: 电子智人
+  title: Vibe知识大赏｜信息论·惊奇之学
+  duration_s: 300.01
+  resolution: "16:9"
+  published: "2026-09-28"
+  has_vo: false          # provisional — no local audio analysis
+  has_bottom_subtitles: false
+  bottom_text_role: designed_narrative
+  script_anchor: text_chart_handoff
+  mode_lock_evidence: >
+    NavXD: text and charts take turns carrying explanation; dark ground,
+    thin-line graphics, blue=structure vs gold=surprise. No author prompt
+    published. Local Douyin dump may be blocked — mode locked silent_text_first
+    as safe series default; upgrade to light VO only with evidence, never invent
+    caption strips as body copy.
+  densest_windows_approx_s:
+    - [0, 36]      # expectation break (BANNED poem fill-in — do not recreate)
+    - [36, 80]     # possibility compression (BANNED binary-search axis staging)
+    - [80, 120]    # probability → formula
+    - [120, 180]   # redundancy / noise
+    - [216, 240]   # info ≠ meaning (BANNED recommend-card convergence)
+    - [240, 300]   # callback (BANNED poem return)
+
+
+# D2 machine-readable ladder (sizes = STYLE-BASE 约值 @1080; NOT frame-measured)
+type_ladder_roles:
+  - {role: hero_headline, size_px_1080_approx: 88, weight: 900, color: ink, yaml_key: headline}
+  - {role: narrative_band, size_px_1080_approx: 48, weight: 800, color: ink_hi, yaml_key: narrative, band_y: [900, 1020]}
+  - {role: callout_novelty, size_px_1080_approx: 36, weight: 800, color: surprise, yaml_key: novelty}
+  - {role: chart_label, size_px_1080_approx: 28, weight: 600, color: structure, yaml_key: chart_label}
+  - {role: formula, size_px_1080_approx: 40, weight: 600, color: ink, yaml_key: formula}
+  - {role: foot, size_px_1080_approx: 22, weight: 500, color: muted, yaml_key: footnote}
+keyword_gold_max_per_screen: 2
+
+inframe:
+  crop_bottom_mute_gate: required   # pass|fail on densest; crop narrative band y>=900
+  argument_on_gadget_min_pct: 70
+  bottom_is_designed_narrative: true
+  ban_vo_caption_strip_as_body: true
+
+knowledge_anchor:
+  source: "Shannon 1948 · surprisal I=-log p (科普常用)"
+  schematic_only: true
+  yi_gang_points:
+    - surprisal_neq_subjective_shock_as_law
+    - no_fake_exact_bit_counts
+    - info_neq_meaning_not_anti_humanities
+    - redundancy_not_engineering_guarantee
+    - formula_after_felt_gap
+  disclaimer: schematic_科普压缩
+
+motion_densest_windows_abstract:
+  # KEEP grammar only — do NOT realize banned twins in samples
+  - id: hook_expectation_break
+    t_plus: ["hero+wire", "gray expect slot", "NoveltyMark land", "handoff to chart"]
+    ban_realize: B1
+  - id: compress_possibility
+    t_plus: ["new-skin compressor", "blue shrink", "gold mark +1", "near singleton"]
+    ban_realize: B2
+  - id: formula_after
+    t_plus: ["dual predictability", "gap locked", "formula fade+示意"]
+    ban_realize: B4
+  - id: noise_veil
+    t_plus: ["wire full", "veil", "structure readable", "persist"]
+  - id: measure_vs_meaning
+    t_plus: ["dual columns", "async change", "state gap", "no card-swap"]
+    ban_realize: B5
+  - id: callback
+    t_plus: ["opener morph return", "model boundary", "CTA"]
+    ban_realize: B6
+
+palette:
+  bg_top:       "#0A0E16"
+  bg_bottom:    "#121826"
+  bg_panel:     "#151C28"
+  structure:    "#4A8FE0"   # blue = structure / retained possibility / channel
+  structure_dim: "#2A5080"
+  surprise:     "#E8B84A"   # gold = novelty / surprisal / new bit
+  surprise_hi:  "#FFC857"
+  ink:          "#F2EEE6"   # bottom narrative white-bright
+  ink_hi:       "#FFFFFF"
+  muted:        "#8A90A0"
+  missing:      "#C86A6A"   # noise-eaten / occluded (secondary)
+  card_fill:    "#121820"
+  glow_cool:    "#1A2838"
+
+type:
+  headline:  {family: "VKSans", weight: 900, size: 88, line: 1.15, tracking: 0.01, color: ink}
+  chart_label:{family: "VKSans", weight: 600, size: 28, color: structure}
+  novelty:   {family: "VKSans", weight: 800, size: 36, color: surprise}
+  narrative: {family: "VKSans", weight: 800, size: 48, color: ink_hi, band_y: [900, 1020]}
+  formula:   {family: "VKSans", weight: 600, size: 40, color: ink}
+  footnote:  {family: "VKSans", weight: 500, size: 22, color: muted}
+  words_per_screen_main: [6, 18]
+
+layout:
+  safe: {x: 100, y: 70}
+  stage_center: [960, 480]
+  narrative_band: [900, 1020]
+  footnote_xy: [120, 1048]
+  dual_column_gap: 80
+
+line:
+  stroke: 2.0
+  structure_stroke: 2.2
+  novelty_stroke: 2.5
+  dash: [6, 8]
+  glow: {blur: 8, opacity: 0.45}
+
+motion:
+  enter: {ease: power3.out, dur: 0.5, stagger: 0.06}
+  exit:  {dur: 0.28}
+  max_static_s: 3.5
+  text_chart_handoff: true
+  prop_morph_not_reset: true
+  cut_density_per_min: [5, 9]
+  text_dwell_s: [2.2, 5.0]
+  rhythm_grammar:
+    - expectation_break
+    - possibility_compress
+    - formula_after_felt_gap
+    - noise_with_structure
+    - measure_vs_meaning
+    - callback_object_return
+
+density:
+  props_per_beat: [2, 4]
+  max_keyword_chars: 14
+  numbers_need_footnote: true
+  one_idea_per_screen: true
+  mute_readable: true
+  handoff_min_per_3_beats: 1
+
+# KEEP grammar roles (implementations must be NEW — see banned_twins)
+props_allowed:
+  - SurprisalMeter
+  - PossibilityCompressor   # NOT binary-search number axis twin
+  - StructureWire
+  - NoveltyMark
+  - NoiseVeil
+  - MeasureVsMeaning        # NOT recommend-card convergence twin
+  - CallbackObject          # must be episode-original
+  - FormulaAfter
+  - DualCompareColumns
+  - NarrativeLine
+  - Footnote
+
+banned_twins:
+  - id: B1
+    name: bed-moon-poem-fillin
+    rule: "床前明月__ / any 床前·明月·霜 诗句填空开场或钩子"
+  - id: B2
+    name: binary-search-number-axis-staging
+    rule: "水平数轴折半分色 + 比特累加落到具体数字 的同一演示编排"
+  - id: B3
+    name: blue-gold-linechart-label-swap-only
+    rule: "同构图蓝结构+金事件细线图，仅换标签"
+  - id: B4
+    name: beacon-vs-snowfall-pair
+    rule: "烽火台↔城市降雪（或同构军/气象）概率对例原样"
+  - id: B5
+    name: recommend-cards-converge-dual-strings
+    rule: "推荐卡片趋同 + 双字串并列 的信息≠意义舞台"
+  - id: B6
+    name: poem-element-callback
+    rule: "片尾用开场诗句/明月光标原样收束"
+  - id: B7
+    name: gestalt-dianzi-info-theory-still
+    rule: "静帧使路人直接认出电子智人信息论"
+
+# Distance scoring mandate
+award_distance:
+  required: true
+  against: banned_twins
+  fail_if_any_twin: true
+  d1: "still readable as 电子智人信息论 twin"
+  d3: "same grammar family, different topic, residual twin risk"
+  d5: "same blue/gold thin-line + text↔chart grammar; stranger would not name the ref"
+
+forbidden:
+  - author prompt reconstruction / claiming we have 电子智人 prompts
+  - VO caption strip as sole body copy
+  - under_voice duck as primary mix when silent
+  - pixel remake of NavXD-described beats
+  - any banned_twins item
+  - photoreal faces
+  - emoji as argument
+  - fake precision numbers without 示意/footnote
+  - formula wall before a felt everyday gap
+  - copying elevator-phone / wooden-pagoda / learn-faster workstreams into this base
+
+structure:
+  - expectation_vs_surprise
+  - interactive_surprisal_gadget
+  - redundancy_and_noise
+  - information_not_meaning
+  - everyday_callback
+
+signature_moves_abstract:   # abstract ONLY — concrete twins banned above
+  - same_action_different_predictability
+  - turn_abstract_quantity_into_a_gesture
+  - formula_only_after_examples
+  - keep_measure_vs_meaning_split
+  - callback_transformed_opener
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  target_lufs: -15
+  beat_sync_cuts: true
+  duck: null
+
+fits_topics:
+  - surprisal / information content intuition
+  - entropy as uncertainty compression
+  - channel redundancy vs noise
+  - information ≠ semantic meaning
+  - prediction error / Bayesian update (visual)
+  - hard-science explainers that need text↔chart handoff
+
+must_invent_per_episode:
+  - new_everyday_surprisal_metaphor   # NOT poem
+  - new_bits_or_surprisal_gadget      # NOT B2 axis
+  - new_closing_callback_object      # NOT poem return

@@ -1,0 +1,167 @@
+# style-base · 墨有意思暗金「音乐×大脑」
+# TRUE silent_text_first (2026-10-31 rewrite): top-left headlines ARE the script;
+# no bottom VO subtitle band. Sibling: xiaomo-darkgold-disarm (bottom narrative script).
+id: moyou-darkgold-music
+version: 3   # v3 DISTILL-MULTIDIM nine-item harden 2026-10-31
+lineage: [vibe-knowledge/darkgold, vibe-knowledge/silent-text-first, 墨有意思·大脑先爽]
+series_tag: "Vibe知识大赏 · 音乐×大脑"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+
+ref:
+  folder: /workspace/vk-brain-first/ref-full
+  dense_frames: /workspace/vk-distill/refs/moyou-dense
+  source_mp4: /workspace/vk-brain-first/ref-full/source.mp4
+  duration_s: 39.9
+  ep2_folder: /workspace/vk-myth-music/ref
+  has_vo: false
+  has_bottom_subtitles: false
+  script_anchor: top_left_headline
+
+palette:
+  bg_top:    "#0B0D12"
+  bg_bottom: "#101826"
+  bg_glow:   "#1A2233"
+  accent:    "#FFB347"
+  accent_dim: "#7A5524"
+  ink:       "#F2EEE6"
+  muted:     "#8A8F99"
+  bar:       "#5C6270"
+  compare_a: "#F28DB2"   # only for two-series compare
+  compare_b: "#7FB8F0"
+
+type:
+  headline: {family: "VKSans", weight: 900, size: 104, line: 1.18, tracking: 0.02, max_lines: 2}
+  card:     {family: "VKSerif", weight: 900, size: 150}
+  kicker:   {family: "VKSans", weight: 800, size: 40, color: accent}
+  label:    {family: "VKSans", weight: 800, size: 46}
+  number:   {family: "VKMono", weight: 800}
+  footnote: {family: "VKSans", weight: 500, size: 26, color: muted}
+  # NO type.subtitle — argument is headline + chart labels
+  callout:  {family: "VKSans", weight: 700, size: 32, color: accent}
+  words_per_screen_main: [6, 16]
+
+layout:
+  safe: {x: 110, y: 70}
+  kicker_xy: [120, 108]
+  headline_xy: [120, 250]
+  chart_box: [880, 380, 920, 460]
+  brain_hud_xy: [top-right]
+  footnote_xy: [120, 1048]
+  # content may use lower third for waveform; no reserved VO subtitle band
+
+line:
+  stroke: 4
+  dash: [10, 8]
+  glow: {blur: 10, opacity: 0.55}
+
+motion:
+  enter: {ease: power3.out, dur: 0.5, stagger: 0.06}
+  exit:  {dur: 0.3}
+  max_static_s: 3.0
+  live_meters: true
+  persistent_bed: true          # waveform never hard-clears mid-chapter
+  cut_density_per_min: [6, 12]  # short refs denser; lengthen dwell on longer eps
+  text_dwell_s: [2.0, 4.0]
+  rhythm_grammar: [hook_headline, bed_progress, drop_mark, brain_callout, dual_curve, countdown, footnote]
+
+density:
+  props_per_beat: [2, 4]
+  max_keyword_chars: 14
+  numbers_need_footnote: true
+  one_idea_per_screen: true
+  mute_readable: true
+
+forbidden:
+  - VO / narration track
+  - traditional subtitle / closed-caption strip
+  - under_voice duck as primary mix rule
+  - 每句VO换标题 / 口播吸附
+  - hard-resetting waveform bed every sentence
+  - flat gray cards (filled rounded rects as content containers)
+  - particle soup / bokeh fields
+  - more than one accent color doing the pointing
+  - emoji
+  - copying other channels' series names
+
+structure: [生活钩子, 机制, 反直觉, 升华, 行动+CTA]
+
+props_allowed:
+  - WaveformBed
+  - DropTag
+  - Playhead
+  - BrainCallout
+  - DualCurve
+  - IsoBars
+  - BrainHUD
+  - CountdownHook
+  - SpeechSong
+  - StaffNotes
+  - RatingRail
+  - Footnote
+  - SerifTitleCard
+  - Counter
+
+signature_shots:
+  - drop-countdown
+  - dopamine-twice-brain
+  - anticipation-window-curve
+  - persistent-waveform-bed
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  target_lufs: -15
+  beat_sync_cuts: true
+  duck: null
+
+
+# densest-measured type ladder @1080 (approx from 720p stills ×1.5); see STYLE-BASE §2.2
+type_ladder_lock:
+  kicker:   {size_px: [36, 44], weight: [700, 800], color: accent, pos: top_left}
+  hero:     {size_px: [96, 110], weight: 900, color: ink_plus_gold_keywords_le_2, pos: top_left}
+  callout:  {size_px: [28, 40], weight: [700, 800], color: accent_or_ink, pos: on_chart}
+  foot:     {size_px: [22, 28], weight: 500, color: muted, pos: bottom_left}
+  hud:      {size_px: [26, 32], weight: 700, color: ink_accent_meters, pos: top_right}
+
+mode_evidence:
+  listen: "AAC first ~20s continuous music bed; no VO formant; has_vo false"
+  frames: "top-left kinetic CN + chart labels + BL footnote; no bottom caption; no talking head"
+  lock: silent_text_first
+
+knowledge_anchor:
+  cite: "Salimpoor et al. 2011 Nature Neuroscience"
+  schematic: true
+  n_effective: 8
+  easy_challenge:
+    - "N=8 not universal law"
+    - "dopamine twice is popularization"
+    - "composers always delay overclaim"
+    - "goosebumps as sole climax op-def"
+
+banned_twins:
+  - B1_waveform_drop_pegs_hook_bed
+  - B2_countdown_explode_plus_brain_before_ears
+  - B3_brain_hud_expect_climax_meters
+  - B4_caudate_gold_accumbens_white_plus_15s_window
+  - B5_series_kicker_fantizhue_06
+  - B6_gestalt_moyou_brain_first
+  - B7_reskin_waveform_drop_brain_only
+
+motion_densest_beats:
+  - hook_countdown_waveform   # ~0.5–3.5s
+  - drop_expect_curves_hud    # ~3.5–6.5s
+  - brain_dual_curve          # ~12–18s
+  - delay_back_to_bed         # ~18–25s
+  - countdown_hold            # ~28–32s
+
+fits_topics:
+  - music × dopamine / anticipation
+  - arrangement / drop craft
+  - earworm / chills studies
+  - counterintuitive charts with citations

@@ -1,0 +1,79 @@
+id: zhongshan-learn-fast
+version: 1
+lineage: [vibe-knowledge/silent-text-first, 中山晓·越学越快]
+series_tag: "Vibe知识大赏 · 学习×元认知"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+ref:
+  folder: /workspace/vk-distill/refs/learn-zhongshan
+  source_mp4: /workspace/vk-distill/refs/learn-zhongshan/source.mp4
+  short_url: https://v.douyin.com/CDPXLI0wWgU/
+  aweme_id: "7696162561166789938"
+  duration_s: 104.9
+  contact_sheet: /workspace/vk-distill/bases/zhongshan-learn-fast/contact-sheet.jpg
+  creator: 中山晓
+  title_on_screen: 同时学一样东西，为什么他越学越快，你越学越累？
+  has_vo: false
+  has_bottom_subtitles: false
+
+palette:
+  bg: "#0A0908"
+  glow_warm: "#2A2018"
+  gold: "#D4A84B"   # 小金 / 快
+  blue: "#7EB6D4"   # 小蓝 / 慢
+  ink: "#F2EEE6"
+  muted: "#8A8580"
+  schematic: "#5AD0E8"
+
+type:
+  hook: {family: VKSerif, size_pct_h: 8.0, max_lines: 2}
+  body: {family: VKSerif, size_pct_h: 5.5}
+  big_number: {family: VKSerif, size_pct_h: 12.0, weight: 800}
+  part_label: {family: VKSerif, size_pct_h: 4.0, color: gold}
+  part_desc: {family: VKSerif, size_pct_h: 2.5, color: muted}
+  cta: {family: VKSerif, size_pct_h: 9.0}
+  cta_sub: {family: VKSans, size_pct_h: 3.5, color: muted}
+  words_per_screen_main: [8, 20]
+
+layout:
+  compare: split_lr_or_tb
+  color_binds_identity: true
+  footnote_xy: [right, bottom]
+
+motion:
+  cut_density_per_min: [6, 10]
+  text_dwell_s: [2.5, 5.0]
+  micro: [path_advance, gear_spin_idle, label_callout_pop, number_count]
+
+structure:
+  - dual_path_hook
+  - parable_day_one
+  - mechanism_callouts
+  - data_counterintuitive
+  - quality_over_quantity
+  - timeline_transfer
+  - matthew_effect
+  - identity_cta
+
+props:
+  - DualPathStage
+  - CharacterDuo
+  - WindupSchematic
+  - SpeechBubbleAsk
+  - DataCompareCard
+  - ShallowVsDeep
+  - YearTimeline
+  - MatthewGap
+  - DualIdentityCTA
+
+forbidden:
+  - VO / subtitle transcript bar
+  - more than two identity colors
+  - numbers without citation when claiming research
+  - emoji
+
+fits_topics:
+  - learning methods / metacognition
+  - deliberate practice / transfer
+  - matthew effect / compounding skill
+  - question quality

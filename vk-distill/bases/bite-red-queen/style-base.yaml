@@ -1,0 +1,189 @@
+# style-base · 比特新语《红皇后·拼尽全力为何原地》→ grammar lock ONLY
+# Anti-copy: BANNED twins listed; invent new relative-motion metaphor / chapter tags / CTA.
+# We do NOT have the author's prompt.
+id: bite-red-queen
+version: 1
+lineage: [vibe-knowledge/silent-text-first, 比特新语·红皇后假说·grammar-only]
+series_tag: "Vibe知识大赏 · 相对适应 / 共进化"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+
+ref:
+  folder: /workspace/vk-distill/refs/bite-xinyu-redqueen/
+  shots_tmp: /tmp/bite-xinyu-shots/
+  meta: /workspace/vk-distill/refs/bite-xinyu-redqueen/meta.txt
+  url: https://www.douyin.com/video/7691995956832685321
+  short_url: https://v.douyin.com/9pBA3rcC1Wg/
+  author: 比特新语
+  title: 「Vibe知识大赏」你已经拼尽全力了，为什么还在原地？
+  duration_s: 164
+  resolution: "~16:9"
+  published: "2026-10-02"
+  has_vo: false          # provisional — full audio not monitored
+  has_bottom_subtitles: false
+  bottom_text_role: designed_narrative_punch
+  script_anchor: kinetic_text_gadget_handoff
+  mode_lock_evidence: >
+    Comments ID BGM as Never Gonna Give You Up / series shared track.
+    Dense frames: large on-screen Chinese (white + red keywords) + HUD/diagrams;
+    no talking head, no separate caption strip. Local blob video; no mp4 dump.
+    Locked silent_text_first until listen proves VO.
+  densest_windows_s:
+    - [4, 12]      # RunnerHUD hook (BANNED twin B1 — do not recreate)
+    - [33, 42]     # SpeciesWeb
+    - [49, 58]     # ArmsRaceTrack (BANNED B2)
+    - [59, 68]     # TreeRace
+    - [65, 80]     # CredentialStairs (BANNED B3)
+    - [99, 110]    # ExtinctBranch
+    - [115, 128]   # GauseTube
+    - [148, 158]   # DirectionTrack climax (BANNED B4 verbatim CTA)
+    - [160, 164]   # StarPause (BANNED B5)
+
+palette:
+  bg:           "#0A0A0A"
+  bg_grid:      "#121212"
+  semantic_red: "#E23B3B"   # effort / trap / unchanged displacement / keywords
+  semantic_red_hi: "#FF3B3B"
+  ink:          "#F5F5F5"
+  ink_hi:       "#FFFFFF"
+  muted:        "#7A7A7A"
+  track_line:   "#C62828"
+  # no third semantic primary (no gold/blue role swap)
+
+type_ladder:
+  kicker:   {family: "VKSans", weight: 600, size: [28, 36], color: semantic_red, pos: top_left}
+  hero:     {family: "VKSans", weight: 900, size: [72, 96], color: ink, keyword_color: semantic_red, pos: top_left}
+  callout:  {family: "VKSans", weight: 700, size: [28, 44], color: ink, stroke: semantic_red}
+  foot:     {family: "VKSans", weight: 800, size: [40, 52], color: ink_hi, keyword_color: semantic_red, band_y: [900, 1020]}
+  hud:      {family: "VKSans", weight: 600, size: [22, 36], label_color: ink, irony_value_color: semantic_red}
+  footnote: {family: "VKSans", weight: 400, size: [16, 20], color: muted}
+  keywords_per_screen_max: 2
+
+layout:
+  safe: {x: 100, y: 70}
+  stage_center: [960, 500]
+  narrative_band: [900, 1020]
+  footnote_xy: [120, 1048]
+  kicker_xy: [100, 72]
+
+line:
+  stroke: 1.8
+  track_stroke: 2.0
+  dash_x0: [6, 8]
+  glow: {blur: 10, opacity: 0.4}
+
+motion:
+  enter: {ease: power3.out, dur: 0.45, stagger: 0.05}
+  exit:  {dur: 0.28}
+  max_static_s: 3.5
+  prop_morph_not_reset: true
+  text_gadget_handoff: true
+  beat_examples:
+    - "runner blur + HUD tick while displacement stuck 0"
+    - "track points orbit with trail; gap label unchanged"
+    - "stairs figures stagger-rise + oval pills pop"
+    - "tree trunks grow; sunlight cone shrinks"
+    - "climax dotted line shoots off track; displacement climbs"
+
+density:
+  props_per_beat: [2, 4]
+  one_idea_per_screen: true
+  mute_readable: true
+  inframe_argument_min_pct: 70
+  crop_bottom_mute_gate: required
+  hook_max_s: 4
+  narrative_beat_s: [4, 6]
+
+knowledge_anchor:
+  primary: "Leigh Van Valen 1973 Red Queen hypothesis"
+  quote_source: "Alice Through the Looking-Glass — Red Queen"
+  secondary: "Gause 1934 competitive exclusion (P. aurelia vs P. caudatum) — schematic"
+  schematic_numbers:
+    - "SPEED / DISPLACEMENT / HR HUD"
+    - "×1.05 predator/prey"
+    - "树高 12 m"
+    - "99% extinct"
+  disclaimer: "个人观点，仅供参考"
+  do_not_claim_as_measured: true
+
+props_allowed:
+  - RunnerHUD          # NOT B1 twin as our hook
+  - SpeciesWeb
+  - ArmsRaceTrack      # NOT B2 cheetah/gazelle staging
+  - TreeRace
+  - CredentialStairs   # NOT B3 exact 8 pills
+  - ExtinctBranch
+  - GauseTube
+  - DirectionTrack     # NOT B4 verbatim couplet
+  - StarPause          # NOT B5 verbatim
+  - NarrativeLine
+  - Footnote
+  - ChapterKicker
+
+banned_twins:
+  - id: B1
+    name: red-runner-displacement-zero-hud
+    rule: "红剪影冲刺 + DISPLACEMENT 0.00 反讽 HUD（棋盘/x=0）作钩"
+  - id: B2
+    name: cheetah-gazelle-oval-track-x105
+    rule: "椭圆轨猎豹/羚羊双方×1.05 + 差距不变 staging"
+  - id: B3
+    name: credential-stairs-eight-pills
+    rule: "学历证书实习加班绩点考研技能人脉 同8椭圆标签 + 聚光舞台不变"
+  - id: B4
+    name: speed-direction-couplet-verbatim
+    rule: "「速度，是红皇后给的。方向，是你自己的。」verbatim CTA"
+  - id: B5
+    name: starry-sky-not-falling-behind
+    rule: "「停下来，看一眼星空，不算掉队。」verbatim"
+  - id: B6
+    name: gestalt-bite-red-queen-still
+    rule: "近黑+红跑者/轨+白红kinetic字 → 路人喊比特新语红皇后"
+  - id: B7
+    name: label-swap-only-web-branch-tube
+    rule: "SpeciesWeb/ExtinctBranch/GauseTube 同构图仅换文案"
+
+award_distance:
+  required: true
+  against: banned_twins
+  fail_if_any_twin: true
+  d1: "still readable as 比特新语红皇后 twin"
+  d5: "same red-effort grammar; stranger would not name the ref"
+
+forbidden:
+  - author prompt reconstruction
+  - VO caption strip as sole body copy
+  - any banned_twins item
+  - photoreal faces as main stage
+  - third semantic primary color stealing red's effort/unchanged role
+  - presenting schematic HUD/×1.05/99%/12m as measured science
+  - verbatim B4/B5 CTA
+  - lying-flat moral that "effort is useless" without agency/direction beat
+
+structure:
+  - effort_zero_displacement_hook
+  - environment_is_other_species
+  - red_queen_naming
+  - arms_race_examples
+  - stop_equals_fossil
+  - another_track_gause
+  - speed_vs_direction
+  - pause_under_sky_cta
+
+must_invent_per_episode:
+  - new_relative_motion_metaphor   # NOT cheetah / stairs / runner-0
+  - new_chapter_tag_system
+  - new_cta_couplet               # choose different game; NOT 星空/方向 lines
+
+bgm:
+  title: null   # do not lock Rickroll; pick cleared bed
+  path: null
+  target_lufs: -15
+  duck: null
+
+fits_topics:
+  - Red Queen / relative fitness intuition
+  - coevolutionary arms race explainers
+  - competitive exclusion entry (schematic)
+  - "run hard, stay put" workplace mechanisms with NEW metaphor
+  - choosing a different game / track

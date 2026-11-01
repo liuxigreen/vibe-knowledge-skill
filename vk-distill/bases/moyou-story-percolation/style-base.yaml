@@ -1,0 +1,210 @@
+# style-base · 墨有意思《那些没有回报的努力，都去哪了？》→ grammar lock ONLY
+# Anti-copy: BANNED twins listed; invent new life-hook / readout / evening close.
+# We do NOT have the author's prompt. NOT Red Queen.
+id: moyou-story-percolation
+version: 1
+lineage: [vibe-knowledge/silent-text-first, vibe-knowledge/story-scene, 墨有意思·渗流相变·grammar-only]
+series_tag: "Vibe知识大赏 · 渗流 / 平台期"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+narrative_mode: story_scene_hybrid   # stick desire-blocked + persist LatticeBed
+
+ref:
+  folder: /workspace/vk-distill/refs/moyou-effort-noreturn/
+  older_folder: /workspace/vk-percolation/ref-moyou/
+  meta: /workspace/vk-distill/refs/moyou-effort-noreturn/meta.txt
+  incomplete_pitch: /workspace/vk-percolation/   # NOT finished base; do not copy narration as CTA
+  url: https://www.douyin.com/video/7699103201013910811
+  short_url: https://v.douyin.com/2bebR300v_0/
+  author: 墨有意思
+  title: Vibe知识大赏｜那些没有回报的努力，都去哪了？
+  theme: 渗流相变
+  duration_s: 117
+  resolution: "9:16 card in 16:9 mini-TV"
+  published: "2026-10-21"
+  has_vo: false          # provisional — no local mp4 listen
+  has_bottom_subtitles: false
+  bottom_text_role: none_continuous_echo_banned
+  script_anchor: card_lower_third_hero_sub
+  mode_lock_evidence: >
+    Dense frames: burned-in cream serif hero + gray sub inside vertical card;
+    counters (48/838, 422/838, 45%, 113→334) as mechanism readout;
+    no talking head, no continuous bottom-white caption strip.
+    Volume UI visible; VO vs BGM not ear-verified. Sibling moyou music = silent.
+    Locked silent_text_first until listen proves VO.
+  chapters_s:
+    - [17, "渗流相变：一块有缝的石头"]
+    - [49, "第422条缝，渗到底了"]
+    - [78, "那个学会骑车的傍晚"]
+  densest_windows_s:
+    - [6, 14]      # language stick + bubbles (hook)
+    - [22, 40]     # gas mask → guess lattice
+    - [48, 58]     # 422 span snap (BANNED B1/B2 twin — do not recreate)
+    - [78, 95]     # stuck 45% (BANNED B3)
+    - [100, 117]   # neurons → bike evening (BANNED B4 verbatim)
+
+palette:
+  bg:            "#0A0A0A"
+  bg_card:       "#14110E"
+  path_gold:     "#E8C56A"    # open pores / spanning path
+  path_hi:       "#F5E6B0"
+  cream:         "#F2E6D0"    # hero serif
+  muted:         "#9A958C"    # subline
+  dusk_orange:   "#C4783A"    # bike shot ONLY — not semantic primary
+  # NO semantic red (contrast bite-red-queen)
+
+type_ladder:
+  counter:  {family: "VKSans", weight: 700, size: [44, 72], color: cream, pos: above_lattice}
+  hero:     {family: "VKSerif", weight: 900, size: [48, 72], color: cream, pos: card_lower_third}
+  sub:      {family: "VKSans", weight: 500, size: [22, 32], color: muted, pos: under_hero}
+  callout:  {family: "VKSans", weight: 600, size: [18, 28], color: path_gold}
+  gauge:    {family: "VKSans", weight: 600, size: [16, 24], color: path_gold}
+  footnote: {family: "VKSans", weight: 400, size: [14, 18], color: muted}
+  keywords_per_screen_max: 2
+  sizes_note: "approx from phone-crop stills — not pixel-measured masters"
+
+layout:
+  safe: {x: 100, y: 70}
+  mini_tv: {card_aspect: "9:16", stage: "centered_in_16x9_black"}
+  lattice_box: "center of vertical card"
+  hero_band: "lower third inside card"
+  counter_y: "above lattice"
+  ruler: "left of lattice"
+
+line:
+  stroke: 1.6
+  path_stroke: 2.4
+  glow: {blur: 12, opacity: 0.45}
+
+motion:
+  enter: {ease: power3.out, dur: 0.45, stagger: 0.05}
+  exit:  {dur: 0.28}
+  max_static_s: 4.0          # lattice may hold if counter/cluster still ticks
+  prop_morph_not_reset: true
+  text_gadget_handoff: true
+  stick_pose_not_walk_cycle: true
+  spanning_snap: true
+  beat_examples:
+    - "pore dots accumulate unconnected inside stick / at foot"
+    - "crack counter ticks while water % stays low"
+    - "one link lights top-to-bottom spanning path"
+    - "same stick stands on subcritical lattice at 45%"
+    - "bike evening: adult releases; skill labels light as connected nodes"
+
+density:
+  props_per_beat: [2, 4]
+  one_idea_per_screen: true
+  mute_readable: true
+  inframe_argument_min_pct: 70
+  crop_bottom_mute_gate: required
+  hook_max_s: 4
+  narrative_beat_s: [4, 6]
+  chapter_count_src: 3
+  anti_card_swap: true
+
+knowledge_anchor:
+  primary: "Broadbent & Hammersley 1957 percolation (gas-mask filter hook)"
+  secondary: "Erdős–Rényi critical connectivity — schematic"
+  tertiary: "neuron culture network threshold — 示意 only (frame h)"
+  schematic_numbers:
+    - "48/838 · 422/838 · 377/838"
+    - "45% open / water 29%"
+    - "113 → 334 pores wetted"
+    - "ruler 0% → 100%"
+  disclaimer: "示意 / 源片演示数 — not universal law"
+  do_not_claim_as_measured: true
+
+story:
+  protagonist: StickLead_cream
+  desire: "understand language / ride bike / see return on practice"
+  block: "subcritical pores — effort opens links that do not span yet"
+  turn: "one more link → spanning cluster"
+  close: "evening 'suddenly I can' = spanning crack (invent NEW close; ban B4)"
+  conflict_turn_visible_state: true
+  max_cast: 2
+
+props_allowed:
+  - StickLead
+  - GibberishBubbles
+  - GasMaskLattice       # NOT B5 twin as our hook
+  - LatticeBed
+  - CrackCounter         # NOT B1 422/838 staging
+  - PctRuler
+  - SpanningPath         # NOT B2 verbatim
+  - NeuronRhyme
+  - BikeEvening          # NOT B4 verbatim CTA
+  - PoreDots
+  - Footnote
+
+banned_twins:
+  - id: B1
+    name: crack-counter-422-of-838-lattice
+    rule: "422/838（或48→422同构）+ 同款竖卡LatticeBed +「已打开的缝」计数墙作签名演示"
+  - id: B2
+    name: percolates-path-113-to-334
+    rule: "「渗到底了」+白金贯穿+113→334+尺100% verbatim staging"
+  - id: B3
+    name: stuck-at-45-water-29
+    rule: "「停在45%」+水29%+stick站格顶 verbatim"
+  - id: B4
+    name: bike-evening-adult-lets-go-verbatim
+    rule: "「直到某个傍晚…大人悄悄松了手」verbatim CTA"
+  - id: B5
+    name: gas-mask-1957-hook-stack
+    rule: "同款面具脸滤罐格+「1957·防毒面具」hero/sub栈作钩"
+  - id: B6
+    name: gestalt-moyou-percolation-still
+    rule: "mini-TV+cream衬线下三+暖金贯穿格+stick外语/骑车 → 路人喊墨有意思渗流"
+  - id: B7
+    name: bite-red-queen-hud-pollution
+    rule: "红棋盘+SPEED/DISPLACEMENT HUD 混入本底座"
+  - id: B8
+    name: label-swap-or-pitch-narration-cta
+    rule: "Lattice/Stick/Bike仅换文案；或vk-percolation旁白verbatim作CTA"
+
+award_distance:
+  required: true
+  against: banned_twins
+  fail_if_any_twin: true
+  d1: "still readable as 墨有意思渗流 twin"
+  d5: "same subcritical→span grammar; stranger would not name the ref"
+
+forbidden:
+  - author prompt reconstruction
+  - VO caption strip as sole body copy
+  - continuous bottom-white echo of in-frame hero/sub
+  - any banned_twins item
+  - semantic red as primary (bite role)
+  - photoreal faces as main stage
+  - presenting 422/838 / 45% / 113→334 as universal measured law
+  - lying-flat moral that practice is useless (keep dark connectivity beat)
+  - remaking full episode from this distill alone
+  - copying /workspace/vk-percolation narration as our CTA
+
+structure:
+  - life_block_hook_stick
+  - gas_mask_1957_to_lattice
+  - guess_how_many_cracks
+  - subcritical_tick_invisible
+  - spanning_snap
+  - same_stick_plateau_pct
+  - neuron_rhyme_schematic
+  - evening_suddenly_can_close
+
+must_invent_per_episode:
+  - new_life_hook_scene          # NOT gibberish-language twin
+  - new_readout_or_lattice_ui    # NOT 422/838 staging
+  - new_suddenly_can_close       # NOT bike lets-go verbatim
+
+bgm:
+  title: null
+  path: null
+  target_lufs: -15
+  duck: null
+
+fits_topics:
+  - plateau / invisible practice returns
+  - sudden insight as critical connectivity
+  - percolation / phase-transition intuition with NEW metaphor
+  - skill threshold explainers (story_scene hybrid)
+  - NOT Red Queen treadmill; NOT music DROP bed; NOT social disarm

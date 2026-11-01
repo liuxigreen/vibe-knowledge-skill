@@ -1,0 +1,133 @@
+id: memphis-diorama
+version: 1
+craft: memphis-diorama
+series_tag: Vibe知识大赏 · 记忆小镇
+canvas:
+  w: 1920
+  h: 1080
+  fps: 30
+palette:
+  bg_top: '#FFFCF6'
+  bg_bottom: '#FFFCF6'
+  paper: '#FFFCF6'
+  ink: '#25214A'
+  muted: '#5B5772'
+  yellow: '#FFD234'
+  pink: '#FF7EB3'
+  sky: '#5CC8FF'
+  mint: '#5EDFB0'
+  lilac: '#B9A0FF'
+  peach: '#FF9C6B'
+  accent: '#2F5BFF'
+  coral: '#FF5A5F'
+  green: '#2FCB7A'
+  shadow: '#B3A0D8'
+  grass: '#8FD98A'
+  path: '#F4E3C3'
+  card: '#FFFFFF'
+accent_hue:
+  opencv_lo: 100
+  opencv_hi: 135
+type:
+  headline:
+    family: VKSans
+    weight: 900
+    size: 76
+    line: 1.18
+    where: callout pill / sign in the model
+  card:
+    family: VKSans
+    weight: 800
+    size: 56
+  kicker:
+    family: VKSans
+    weight: 700
+    size: 28
+    color: muted
+  label:
+    family: VKSans
+    weight: 800
+    size: 40
+  number:
+    family: VKMono
+    weight: 800
+  footnote:
+    family: VKSans
+    weight: 500
+    size: 24
+    color: muted
+  subtitle:
+    family: VKSans
+    weight: 700
+    size: 42
+    color: ink
+    band_y:
+    - 930
+    - 1010
+    stroke: '#FFFCF6'
+layout:
+  frame:
+    w: 1640
+    h: 800
+    cy: 480
+    grain_edge: true
+  safe:
+    x: 110
+    y: 60
+  footnote_xy:
+  - 120
+  - 1050
+  type_under_frame: true
+  kicker_xy:
+  - 120
+  - 100
+  headline_xy:
+  - 120
+  - 220
+motion:
+  camera: high slow drift / locked 3/4 / slow push to a detail; one continuous take
+  state_change: squash-and-spring then wave
+  frame_grain_fps: 12
+  max_static_s: 3.0
+  transitions:
+  - frame draws in/grows out
+  - wave
+  - cutaway
+  forbidden_transitions:
+  - white flash
+  - spin
+  - fast hard cut
+density:
+  props_per_beat:
+  - 2
+  - 4
+  max_keyword_chars: 14
+  numbers_need_footnote: true
+forbidden:
+- depth of field / bloom / motion blur
+- gradients on surfaces (flat 3-tone only)
+- grey shadows (shadows are purple)
+- close-up characters acting
+- random colour sprinkling
+- emoji
+structure:
+- 生活钩子
+- 机制
+- 反直觉
+- 升华
+- 行动+CTA
+bgm:
+  title: we never
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  under_voice_lu: -20
+  gap_lift_lu: 8
+  duck:
+    threshold: 0.02
+    ratio: 8
+    attack_ms: 20
+    release_ms: 400

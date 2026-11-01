@@ -1,0 +1,82 @@
+id: yingxian-tenon
+version: 1
+craft: timber-joinery-3d
+mode: silent_text_first
+canvas: {w: 1920, h: 1080, fps: 30}
+title_series: "Vibe知识大赏"
+source_lock: "https://yingxian.huaye.art/cn/topics/structure"
+
+palette:
+  wood: "#B07A48"
+  wood_dark: "#6E4528"
+  wood_gold: "#C99555"
+  wood_accent: "#D4A574"
+  stone: "#A89880"
+  stone_dark: "#6E6456"
+  tile: "#3A4550"
+  soil: "#5A3A22"
+  grass: "#4A6A38"
+  cad_line: "#E8DCC8"
+  bg_warm: "#1A1410"
+  accent: "#FF6A3A"
+  hud_ink: "#F7F0E6"
+  hud_dim: "#C8B8A4"
+  tenon_glow: "#FFB070"
+  ghost: "#C8B090"
+
+type:
+  chip_num: {weight: 800, size: 22, bg: accent}
+  chip_zh: {weight: 700, size: 30}
+  chip_en: {size: 14, tracking: 0.2em, color: hud_dim}
+  day_num: {weight: 800, size: 70, color: accent}
+  sub_zh: {weight: 700, size: 38, highlight: accent}
+  sub_en: {style: italic, size: 19, color: hud_dim, opacity: 0.68}
+
+hud_layout:
+  top_left: chapter_chip
+  top_right: day_odometer_task
+  bottom_left: counters_dual_cylinder_tenon_dougong
+  bottom_center: bilingual_mute_line
+  safe_margin_px: 44
+
+chapters:
+  - {n: 1, id: drawings, zh: 图纸, en: DRAWINGS}
+  - {n: 2, id: podium, zh: 台基, en: PODIUM}
+  - {n: 3, id: dual_grid, zh: 双筒, en: DUAL GRID}
+  - {n: 4, id: tenon, zh: 榫卯, en: TENON}
+  - {n: 5, id: dougong, zh: 斗栱, en: DOUGONG}
+  - {n: 6, id: eaves, zh: 屋檐, en: EAVES}
+
+props:
+  - DualCylinderGrid
+  - TenonJoin
+  - DougongSet
+  - MingAnLayerHint
+  - DayProgressHUD
+
+growth_grammar:
+  primary: ordered_piece_reveal
+  secondary: [dual_ring_columns, macro_tenon_slide, instanced_corner_dougong, ghost_upper_storey]
+
+camera:
+  densest_window_s: [3.0, 7.5]
+  moves: [cad_to_world, slow_orbit_low, push_macro_tenon, orbit_dougong, soft_pull_silhouette]
+  dof: light
+  tilt_default: 0
+
+audio: {vo: none, bgm: "we never", bpm: 112, duck: none}
+
+facts_locked:
+  exterior: "八角五层六檐"
+  interior_layers: "5明+4暗=9"
+  grid: "内外双筒柱网"
+  joinery_vs_bracket: "榫卯≠斗栱"
+  rigidity: "刚柔相间·暗层斜撑"
+
+do_not:
+  - invent_fake_citations
+  - single_column_ring_only
+  - dougong_as_one_blob
+  - continuous_through_shaft
+  - double_gold_cad_over_timber
+  - thatopen_three_tunnel
