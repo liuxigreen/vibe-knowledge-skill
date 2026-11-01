@@ -1,0 +1,16 @@
+{
+  "slug": "moyou-story-percolation",
+  "num": "01",
+  "en": "Story Percolation",
+  "cn": "渗流微剧场",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Same stick figures + a lattice bed that morphs until a critical snap.",
+  "line_cn": "同一批 stick 角色 + 格子床长持，临界瞬间贯通翻盘。",
+  "uses": [
+    "Plateau / sunk effort",
+    "Phase-change metaphor",
+    "Micro-drama"
+  ],
+  "library": "vibe-knowledge-skill"
+}

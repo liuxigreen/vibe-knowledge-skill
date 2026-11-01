@@ -1,0 +1,15 @@
+{
+  "slug": "game-show",
+  "num": "19",
+  "en": "Game Show Flat",
+  "cn": "综艺节奏平涂",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Flat game-show rhythm for punchy Q&A beats.",
+  "line_cn": "综艺平涂节奏，服务对答节拍。",
+  "uses": [
+    "Q&A",
+    "Rhythm"
+  ],
+  "library": "vibe-knowledge-skill"
+}

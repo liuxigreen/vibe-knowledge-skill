@@ -1,0 +1,15 @@
+{
+  "slug": "isometric-picture-book",
+  "num": "20",
+  "en": "Isometric Picture Book",
+  "cn": "等距绘本",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Isometric picture-book sandbox for process stories.",
+  "line_cn": "等距绘本沙盘，讲过程故事。",
+  "uses": [
+    "Process",
+    "Sandbox"
+  ],
+  "library": "vibe-knowledge-skill"
+}

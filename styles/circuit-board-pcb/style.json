@@ -1,0 +1,15 @@
+{
+  "slug": "circuit-board-pcb",
+  "num": "16",
+  "en": "Circuit Board PCB",
+  "cn": "PCB 特写",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Closer PCB variant of the circuit-board base.",
+  "line_cn": "电路板特写变体。",
+  "uses": [
+    "PCB",
+    "Steps"
+  ],
+  "library": "vibe-knowledge-skill"
+}

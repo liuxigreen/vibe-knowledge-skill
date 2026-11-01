@@ -1,0 +1,16 @@
+{
+  "slug": "moyou-darkgold-music",
+  "num": "09",
+  "en": "Darkgold Music Brain",
+  "cn": "暗金音乐脑",
+  "category_en": "Silent Diagram",
+  "category_cn": "静音图解",
+  "line": "Persist waveform + brain loci; left headline carries the script.",
+  "line_cn": "persist 波形 + 脑区位点；左上 headline 承载脚本。",
+  "uses": [
+    "Music expectation",
+    "DROP",
+    "Diagram bed"
+  ],
+  "library": "vibe-knowledge-skill"
+}

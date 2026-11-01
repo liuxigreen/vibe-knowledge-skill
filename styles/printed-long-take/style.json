@@ -1,0 +1,15 @@
+{
+  "slug": "printed-long-take",
+  "num": "22",
+  "en": "Printed Long Take",
+  "cn": "印刷长镜头",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Printed long-take camera grammar.",
+  "line_cn": "印刷长镜头运镜语法。",
+  "uses": [
+    "Long take",
+    "Print"
+  ],
+  "library": "vibe-knowledge-skill"
+}

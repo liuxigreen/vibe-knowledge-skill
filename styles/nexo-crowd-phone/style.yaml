@@ -1,0 +1,197 @@
+# style-base · 序界 NEXO「人一多就假装看手机」
+# TRUE silent_text_first (2026-10-31): on-screen type IS the script; BGM-only.
+# Craft family: pill-crowd / phone-shield / self-focus HUD — NOT xiaomo chat, NOT moyou waveform.
+id: nexo-crowd-phone
+version: 2
+lineage: [vibe-knowledge/silent-text-first, 序界NEXO·社交焦虑HUD]
+series_tag: "Vibe知识大赏 · 社交×自我关注"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+
+ref:
+  folder: /workspace/vk-distill/refs/nexo-crowd-phone
+  source_mp4: /workspace/vk-distill/refs/nexo-crowd-phone/source.mp4
+  short_url: https://v.douyin.com/GSQ2YUbpVyA/
+  aweme_id: "7696344887303066331"
+  author: 序界 NEXO
+  title: vibe知识大赏｜为什么人一多你就开始假装看手机？
+  duration_s: 60.0
+  resolution: "1024x576@30"
+  densest_window_s: [27.0, 36.0]   # f0028–f0035 self-focus → phone-shield
+  has_vo: false
+  has_bottom_subtitles: false
+  bottom_text_role: designed_narrative   # concept pill + script line
+  script_anchor: bottom_narrative_plus_stage_copy
+  mode_lock_evidence: >
+    Audio bass-band ~0.80 / mid ~0.20 / hi ~0.01; continuous RMS, 0 silence events;
+    no speech formant track. Mute-readable designed type (hook title, left data copy,
+    bottom concept pill + narrative) carries the full argument.
+
+palette:
+  bg_top:    "#0B1018"
+  bg_bottom: "#10141D"
+  bg_panel:  "#151A24"
+  bg_glow:   "#1A2230"
+  accent:    "#E08A48"      # muted gold/ochre figure (ref median ~#D58648)
+  accent_hi: "#F0A060"
+  accent_dim: "#7A4A28"
+  ink:       "#F2EEE6"
+  muted:     "#8A90A0"
+  crowd:     "#3A4252"      # grey-blue pill crowd
+  crowd_hi:  "#4A5568"
+  bar:       "#5C6270"
+  tension:   "#C84C4C"      # meter fill
+  shield:    "#C8D4E8"      # phone-shield outline
+  card_fill: "#141820"
+  glow_warm: "#2A1C10"
+
+type:
+  headline: {family: "VKSans", weight: 900, size: 88, line: 1.2, tracking: 0.01}
+  data_num: {family: "VKSans", weight: 900, size: 120, color: accent}
+  data_body: {family: "VKSans", weight: 600, size: 36, color: ink}
+  cite:     {family: "VKSans", weight: 500, size: 22, color: muted}
+  callout:  {family: "VKSans", weight: 700, size: 28, color: accent}
+  concept_pill: {family: "VKSans", weight: 700, size: 32, color: accent}
+  # Designed bottom narrative (SCRIPT), not VO captions
+  narrative: {family: "VKSans", weight: 700, size: 44, color: ink, band_y: [900, 1020], align: left_of_center}
+  watermark: {family: "VKSans", weight: 500, size: 22, color: muted}
+  words_per_screen_main: [8, 20]
+  ladder_min_roles: 4   # hero | narrative | callout/pill | cite/foot (+ data_num on data beats)
+  ladder_lock: true
+  evidence_frames: [f0028, f0030, f0035]
+
+layout:
+  safe: {x: 100, y: 70}
+  watermark_xy: [100, 56]
+  left_copy_xy: [120, 220]     # data / hook copy column
+  stage_crowd_x: 420
+  stage_self_x: 1280
+  tension_xy: [860, 420]
+  narrative_band: [900, 1020]
+  concept_pill_xy: [280, 960]
+  footnote_xy: [120, 1048]
+
+line:
+  stroke: 2.5
+  dash: [6, 8]
+  gaze_dash: [4, 10]
+  glow: {blur: 10, opacity: 0.5}
+
+motion:
+  enter: {ease: power3.out, dur: 0.45, stagger: 0.08}
+  exit:  {dur: 0.3}
+  max_static_s: 3.0
+  live_meters: true
+  prop_swap_every_beat: true
+  callout_stagger_s: 0.35
+  cut_density_per_min: [6, 10]
+  text_dwell_s: [2.0, 4.5]
+  rhythm_grammar: [hook_crowd_split, data_phone, self_focus_hud, phone_shield, spotlight_flip]
+
+density:
+  props_per_beat: [3, 5]
+  max_keyword_chars: 16
+  numbers_need_footnote: true
+  one_idea_per_screen: true
+  mute_readable: true
+  densest_layers_min: 4   # crowd+gaze + self + meter + callouts + bottom script
+
+forbidden:
+  - VO / narration track
+  - traditional subtitle / closed-caption strip as sole body copy
+  - under_voice duck as primary mix rule
+  - 口播句首吸附 / 每句VO换标题
+  - forcing xiaomo ChatStack / WrongRightPair as primary prop
+  - forcing moyou WaveformBed / BrainHUD
+  - photoreal faces / 3D people
+  - emoji
+  - copying other channels' series names (@序界 watermark only as optional homage, not required)
+  - same primary prop two beats in a row with zero state change
+  - flat gray content cards as only craft
+
+structure: [生活钩子人多假装看手机, 数据证伪, 自我关注机制, 手机盾牌安全行为, 聚光灯效应翻盘, 行动+CTA]
+
+props_allowed:
+  - PillCrowd
+  - PillSelf
+  - GazeLines
+  - TensionMeter
+  - ThoughtCallouts
+  - FocusBrackets
+  - PhoneMock
+  - PhoneShield
+  - ConceptPill
+  - NarrativeLine
+  - DataStatCard
+  - SpeechDots
+  - DustField
+  - Footnote
+  - SerifTitleCard
+
+signature_shots:
+  - crowd-vs-gold-lone
+  - pew-phone-stat
+  - self-focus-hud-tension
+  - phone-shield-safety
+  - spotlight-not-watching
+
+bgm:
+  title: "we never"
+  path: /workspace/vk-distill/assets/bgm/we-never.mp3
+  fallback: synth
+  start_s: 0
+  loop: true
+  fade_in_s: 0.8
+  fade_out_s: 1.8
+  target_lufs: -15
+  beat_sync_cuts: true
+  duck: null
+
+fits_topics:
+  - social anxiety / spotlight effect
+  - self-focus / safety behaviors
+  - phone-as-shield / avoidance
+  - crowd psychology with simple HUD metaphors
+  - Pew-style cited social stats (with footnote)
+
+distill_patch:
+  date: "2026-10-31"
+  kind: high_roi_multidim
+  mode_was: LOCK
+  added: [type_ladder_harden, motion_3s_densest, inframe_crop_bottom, banned_twins_B1_B8, knowledge_anchor_pew]
+
+knowledge_anchor:
+  primary_cite_family: Pew Research Center style social survey
+  require: [org_name, year_or_示意]
+  schematic_only: [PillCrowd, GazeLines, TensionMeter, PhoneShield, FocusBrackets, ThoughtCallouts]
+  easy_杠:
+    - never_universalize_pew_as_all_people
+    - no_fabricated_stats_without_footnote
+    - phone_shield_is_metaphor_not_clinical_diagnosis
+    - spotlight_flip_not_absolute_safety_claim
+  disclaimer: 示意 / 出处年 on footnote
+
+banned_twins:
+  - B1_grey_pill_crowd_vs_copper_lone_dual_column
+  - B2_gaze_eyes_plus_focus_brackets_HUD
+  - B3_tension_meter_紧张_signature_slot
+  - B4_callouts_表情自然吗_站姿奇怪吗_手该放哪_verbatim
+  - B5_phoneshield_blocks_gaze_plus_安全行为_caption
+  - B6_自我关注_pill_plus_注意力转回自己_verbatim
+  - B7_nexo_pretend_phone_gestalt
+  - B8_reskin_or_cross_family_xiaomo_moyou_props
+
+densest_motion:
+  window_s: [27.0, 36.0]
+  evidence_frames: [f0028, f0030, f0032, f0035]
+  beats:
+    - self_focus_hud: [crowd+gaze, tension_rise, callout_stagger, concept_pill_自我关注]
+    - phone_shield: [shield_expand, gaze_blocked, concept_pill_安全行为, narrative_手机成了盾牌]
+  fail_if: [static_frame, whole_card_swap]
+
+inframe:
+  authority: docs/INFRAME-SHOW.md
+  crop_bottom_mute_gate: required
+  crop_bottom_fraction: [0.12, 0.15]
+  after_crop_must_read: [grey_crowd_vs_copper_self, gaze_or_tension_or_shield]
+  bottom_caption_as_sole_script: forbidden

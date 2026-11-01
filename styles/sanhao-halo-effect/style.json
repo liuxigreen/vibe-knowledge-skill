@@ -1,0 +1,16 @@
+{
+  "slug": "sanhao-halo-effect",
+  "num": "04",
+  "en": "Halo Silhouette",
+  "cn": "晕轮剪影",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Silhouette + relabel pairs make first-impression bias visible.",
+  "line_cn": "剪影 + 重贴标签对，把第一印象偏见演出来。",
+  "uses": [
+    "Cognitive bias",
+    "RelabelPair",
+    "Silent story"
+  ],
+  "library": "vibe-knowledge-skill"
+}

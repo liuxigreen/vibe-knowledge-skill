@@ -1,0 +1,16 @@
+{
+  "slug": "nexo-crowd-phone",
+  "num": "03",
+  "en": "Crowd Phone Shield",
+  "cn": "人群手机盾",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Pill crowd + phone-as-shield stages self-attention anxiety.",
+  "line_cn": "胶囊人群 + 手机当盾，演自我关注焦虑。",
+  "uses": [
+    "Social anxiety",
+    "Props-as-drama",
+    "Crowd grammar"
+  ],
+  "library": "vibe-knowledge-skill"
+}

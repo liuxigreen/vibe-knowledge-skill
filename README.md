@@ -1,19 +1,56 @@
-# Vibe知识大赏 · 完整安装包（全量 · 给另一台电脑 / 另一 AI）
+# Vibe知识大赏 · vibe-knowledge-skill
 
-导出：**2026-11-01 ALL-IN-ONE**  
-含现行 skills/docs/bases（人物故事型 G7、`moyou-story-percolation`）**以及**字体 + BGM，**不必再找 2026-10-31 旧包**。
+**A code-driven toolbox for Douyin knowledge films**: distilled style bases, Award gates, and story-scene KEEP grammar.  
+The **folder shape** follows a familiar style-library layout (`AGENTS.md`, `styles/<slug>/`, `plugin/skills/`). The **craft is ours** — nine-item distill, G0–G7, story KEEP — not a copy of another studio's look library.
 
-## 包内
+Repo: https://github.com/liuxigreen/vibe-knowledge-skill
 
-| 路径 | 用途 |
+## Use
+
+### Skill install (recommended)
+
+Copy into your agent's managed-skills / workflows:
+
+- [`plugin/skills/vibe-knowledge-film/`](plugin/skills/vibe-knowledge-film/)
+- [`plugin/skills/vibe-topic-pipeline/`](plugin/skills/vibe-topic-pipeline/)
+
+Then read [`AGENTS.md`](AGENTS.md).
+
+### Clone
+
+```sh
+git clone https://github.com/liuxigreen/vibe-knowledge-skill.git
+cd vibe-knowledge-skill
+```
+
+Treat the repo root as `$LIB`.
+
+## Layout
+
+| Path | Role |
 |---|---|
-| `skills/vibe-knowledge-film/` | 蒸馏→densest→Award→全片（story_scene / diagram_bed / hybrid） |
-| `skills/vibe-topic-pipeline/` | 选题 + Progress ladder |
-| `vk-distill/docs/` | Scorecard、DISTILL-MULTIDIM、STORY-SCENE-CRAFT、INFRAME-SHOW 等 |
-| `vk-distill/bases/` | 全部底座 STYLE-BASE/yaml/DISTILL-GAP/notes；含 moyou-story-percolation |
-| `vk-distill/assets/fonts/` | NotoSansSC-VF · NotoSerifSC-VF · GeistMono-VF |
-| `vk-distill/assets/bgm/we-never.mp3` | 默认 silent BGM |
-| `vk-distill/tools/award_score_check.py` | /55 校验 |
-| `VERSION.txt` | 版本说明 |
+| `AGENTS.md` | Agent entry |
+| `DIRECTOR.md` | Directing bible (lanes / densest / Award / story KEEP) |
+| `TECHNIQUE.md` | norun, fonts, BGM, PC deliver, tools |
+| `styles/` | One slug per base: `STYLE.md` + `style.yaml` + optional poster/notes |
+| `docs/` | Award scorecard, DISTILL-MULTIDIM, STORY-SCENE-CRAFT… |
+| `assets/` | fonts + `we-never` BGM |
+| `tools/` | Award scripts |
+| `plugin/skills/` | Installable skills |
+| `core/` | Render-convention stub |
 
-先读 **`INSTALL.md`**。
+## Styles
+
+Index: [`styles/README.md`](styles/README.md). Story-lane anchor: `styles/moyou-story-percolation/`.
+
+## Check
+
+```bash
+python3 tools/award_score_check.py "L4 M4 C4 N5 T5 X4 H4 D5 G4 K4 F4"
+```
+
+Rules: `docs/AWARD-SCORECARD.md`.
+
+## 中文
+
+[README.zh-CN.md](README.zh-CN.md)

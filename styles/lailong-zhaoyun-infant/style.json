@@ -1,0 +1,15 @@
+{
+  "slug": "lailong-zhaoyun-infant",
+  "num": "07",
+  "en": "Zhaoyun Infant",
+  "cn": "赵云救孤对读",
+  "category_en": "History Paper",
+  "category_cn": "历史纸偶",
+  "line": "Textbook vs record confrontation as silent paper drama.",
+  "line_cn": "课文对读史实，纸偶静音戏。",
+  "uses": [
+    "Textbook compare",
+    "History"
+  ],
+  "library": "vibe-knowledge-skill"
+}

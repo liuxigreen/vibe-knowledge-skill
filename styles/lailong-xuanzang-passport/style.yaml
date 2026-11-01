@@ -1,0 +1,74 @@
+id: lailong-xuanzang-passport
+version: 1
+lineage: [vibe-knowledge/silent-text-first, 来龙去脉·史剧纸偶]
+series_tag: "Vibe知识大赏 · 历史×典籍还原"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+family: lailong-history-stick
+ref:
+  folder: /workspace/vk-distill/refs/xuan-zang-passport
+  source_mp4: /workspace/vk-distill/refs/xuan-zang-passport/source.mp4
+  short_url: https://v.douyin.com/Gu_njHve5Cg/
+  aweme_id: "7701519070513111526"
+  duration_s: 194.8
+  contact_sheet: styles/lailong-xuanzang-passport/contact-sheet.jpg
+  creator: 来龙去脉
+  has_vo: false
+  has_bottom_subtitles: false
+
+palette:
+  bg: "#1A120C"
+  ink: "#F5F0E6"
+  robe: "#C45C2A"
+  gold: "#E0B85A"
+  mark_blue: "#6BA3C9"
+  mark_red: "#C45C4A"
+  cite: "#8A8078"
+
+type:
+  body: {family: VKSerif, size_pct_h: 6.0, max_lines: 2}
+  underline_emphasis: [mark_blue, mark_red]
+  words_per_screen: [8, 16]
+  footer_cite: {size_pct_h: 2.0, color: cite}
+
+layout:
+  body: [left, upper]
+  stage: [center, lower]
+  map_fullscreen_ok: true
+  pip_ok: true
+  watermark: [right, lower]  # 来龙去脉
+  source_footer: [right, bottom]
+
+motion:
+  cut_density_per_min: [5, 8]
+  text_dwell_s: [2.5, 4.5]
+  micro: [walk_cycle_simple, paper_tear, route_draw, lantern_glow]
+
+structure:
+  - fiction_vs_history_hook
+  - petition_and_flight
+  - torn_permit
+  - desert_ordeal
+  - return_and_audience
+  - translation_closing_inventory
+
+props:
+  - StickMonk
+  - StickOfficial
+  - TopoMapRoute
+  - PiPScene
+  - PaperScatter
+  - DualMarkUnderline
+  - SourceFooter
+  - ClosingInventory
+
+forbidden:
+  - VO
+  - photoreal historical CGI as default
+  - missing source footnote on factual claims
+  - emoji
+
+fits_topics:
+  - history correction vs popular fiction
+  - pilgrimage / route geography
+  - institutional documents

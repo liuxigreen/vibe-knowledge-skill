@@ -1,0 +1,15 @@
+{
+  "slug": "desktop-flythrough",
+  "num": "18",
+  "en": "Desktop Flythrough",
+  "cn": "桌面穿梭",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Agent desktop flythrough grammar.",
+  "line_cn": "Agent 桌面穿梭语法。",
+  "uses": [
+    "Agent UI",
+    "Flythrough"
+  ],
+  "library": "vibe-knowledge-skill"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "yingxian-tenon",
+  "num": "11",
+  "en": "Yingxian Tenon",
+  "cn": "应县榫卯",
+  "category_en": "Silent Diagram",
+  "category_cn": "静音图解",
+  "line": "Tenon joinery as persist mechanism bed.",
+  "line_cn": "榫卯结构作 persist 机制床。",
+  "uses": [
+    "Architecture",
+    "Joinery"
+  ],
+  "library": "vibe-knowledge-skill"
+}

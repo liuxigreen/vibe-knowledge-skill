@@ -1,0 +1,15 @@
+{
+  "slug": "countdown-split",
+  "num": "17",
+  "en": "Countdown Split",
+  "cn": "倒计时分屏",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Split-screen countdown for time psychology beats.",
+  "line_cn": "分屏倒计时，服务时间心理节拍。",
+  "uses": [
+    "Time pressure",
+    "Split"
+  ],
+  "library": "vibe-knowledge-skill"
+}

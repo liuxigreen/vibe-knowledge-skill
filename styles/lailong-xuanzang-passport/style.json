@@ -1,0 +1,15 @@
+{
+  "slug": "lailong-xuanzang-passport",
+  "num": "06",
+  "en": "Xuanzang Passport",
+  "cn": "玄奘通关纸偶",
+  "category_en": "History Paper",
+  "category_cn": "历史纸偶",
+  "line": "Paper-puppet history with passport stamps as beat props.",
+  "line_cn": "纸偶史剧，通关印戳当节拍道具。",
+  "uses": [
+    "History myth-bust",
+    "Paper puppet"
+  ],
+  "library": "vibe-knowledge-skill"
+}

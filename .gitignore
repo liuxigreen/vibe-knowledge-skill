@@ -1,6 +1,13 @@
-node_modules/
+# local episode outputs
+films/
+episodes/
+**/out/
+**/.venv/
+**/node_modules/
 *.mp4
+!assets/**/*.mp3
 .DS_Store
-__pycache__/
-.venv/
-*.log
+gh.token
+*.token
+.env
+.release/

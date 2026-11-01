@@ -1,0 +1,16 @@
+{
+  "slug": "xiaomo-darkgold-disarm",
+  "num": "02",
+  "en": "Darkgold Disarm",
+  "cn": "暗金六层卸防",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Wrong/right chat bubbles and a designed bottom line teach six disarms.",
+  "line_cn": "错对聊天气泡 + 设计底栏叙事句，讲六层卸防。",
+  "uses": [
+    "Social script",
+    "WrongRightPair",
+    "Silent text-first"
+  ],
+  "library": "vibe-knowledge-skill"
+}

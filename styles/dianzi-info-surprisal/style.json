@@ -1,0 +1,15 @@
+{
+  "slug": "dianzi-info-surprisal",
+  "num": "10",
+  "en": "Info Surprisal",
+  "cn": "信息惊奇",
+  "category_en": "Silent Diagram",
+  "category_cn": "静音图解",
+  "line": "Surprisal / information-density gadgets as the lecture bed.",
+  "line_cn": "信息惊奇/密度 gadget 当讲义床。",
+  "uses": [
+    "Information theory",
+    "Surprisal"
+  ],
+  "library": "vibe-knowledge-skill"
+}

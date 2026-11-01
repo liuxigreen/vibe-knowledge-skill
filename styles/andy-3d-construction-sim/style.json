@@ -1,0 +1,14 @@
+{
+  "slug": "andy-3d-construction-sim",
+  "num": "13",
+  "en": "3D Construction Sim",
+  "cn": "三维工地模拟",
+  "category_en": "Silent Diagram",
+  "category_cn": "静音图解",
+  "line": "Site simulation grammar (yaml-only base).",
+  "line_cn": "工地模拟语法（yaml 底座）。",
+  "uses": [
+    "Construction sim"
+  ],
+  "library": "vibe-knowledge-skill"
+}

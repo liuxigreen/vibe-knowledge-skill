@@ -1,0 +1,15 @@
+{
+  "slug": "memphis-diorama",
+  "num": "21",
+  "en": "Memphis Diorama",
+  "cn": "孟菲斯记忆小镇",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Memphis diorama grammar for memory towns.",
+  "line_cn": "孟菲斯微缩，服务记忆小镇。",
+  "uses": [
+    "Memory",
+    "Diorama"
+  ],
+  "library": "vibe-knowledge-skill"
+}

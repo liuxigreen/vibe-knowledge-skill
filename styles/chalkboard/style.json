@@ -1,0 +1,15 @@
+{
+  "slug": "chalkboard",
+  "num": "14",
+  "en": "Chalkboard Lesson",
+  "cn": "黑板课（蒸馏）",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "Our distill of chalkboard lesson grammar for Vibe Award films.",
+  "line_cn": "黑板课语法蒸馏，服务大赏成片。",
+  "uses": [
+    "Lesson",
+    "Myth-bust"
+  ],
+  "library": "vibe-knowledge-skill"
+}

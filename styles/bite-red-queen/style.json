@@ -1,0 +1,15 @@
+{
+  "slug": "bite-red-queen",
+  "num": "05",
+  "en": "Red Queen Treadmill",
+  "cn": "红皇后跑步机",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Keep-running treadmill grammar for arms-race effort (not percolation).",
+  "line_cn": "一直跑才站得住的跑步机语法（≠渗流底座）。",
+  "uses": [
+    "Arms race",
+    "Effort treadmill"
+  ],
+  "library": "vibe-knowledge-skill"
+}

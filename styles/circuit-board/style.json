@@ -1,0 +1,15 @@
+{
+  "slug": "circuit-board",
+  "num": "15",
+  "en": "Circuit Board",
+  "cn": "电路板（蒸馏）",
+  "category_en": "Craft Grammar",
+  "category_cn": "工艺语法",
+  "line": "PCB path-walk grammar for step order.",
+  "line_cn": "电路路径走读，讲步骤秩序。",
+  "uses": [
+    "Steps",
+    "Systems"
+  ],
+  "library": "vibe-knowledge-skill"
+}

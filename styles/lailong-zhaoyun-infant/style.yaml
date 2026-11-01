@@ -1,0 +1,75 @@
+id: lailong-zhaoyun-infant
+version: 1
+lineage: [vibe-knowledge/silent-text-first, 来龙去脉·史剧纸偶, lailong-xuanzang-passport]
+series_tag: "Vibe知识大赏 · 历史×课文对读"
+canvas: {w: 1920, h: 1080, fps: 30}
+mode: silent_text_first
+family: lailong-history-stick
+ref:
+  folder: /workspace/vk-distill/refs/zhaoyun-infant
+  source_mp4: /workspace/vk-distill/refs/zhaoyun-infant/source.mp4
+  short_url: https://v.douyin.com/CrX4WuM_V48/
+  aweme_id: "7701687123191838537"
+  duration_s: 249.2
+  contact_sheet: styles/lailong-zhaoyun-infant/contact-sheet.jpg
+  creator: 来龙去脉
+  has_vo: false
+  has_bottom_subtitles: false
+
+palette:
+  bg: "#1A120C"
+  ink: "#F5F0E6"
+  book_beige: "#E8D9C0"
+  answer_gold: "#E0B85A"
+  mark_blue: "#6BA3C9"
+  mark_red: "#C45C4A"
+  scroll_red: "#B8443C"
+  cite: "#8A8078"
+
+type:
+  body: {family: VKSerif, size_pct_h: 6.0}
+  year_stamp: {family: VKSerif, size_pct_h: 8.0}
+  gold_answer: {family: VKSerif, size_pct_h: 8.0, color: answer_gold}
+  words_per_screen: [8, 18]
+
+layout:
+  body: [left, upper]
+  textbook_center: true
+  source_footer: [right, bottom]
+
+motion:
+  cut_density_per_min: [6, 9]
+  text_dwell_s: [2.5, 4.5]
+  micro: [book_open, red_circle_draw, year_pop, underline_draw]
+
+structure:
+  - hook_suppressed_report
+  - textbook_question
+  - memorial_text_callback
+  - chronicle_beats
+  - huanghao_arc
+  - ironic_return_capital
+  - thirty_six_year_answer
+
+props:
+  - StickEmperor
+  - StickScholar
+  - OpenTextbook
+  - QuoteCouplet
+  - YearStamp
+  - MemorialWall
+  - BattleStick
+  - GoldAnswerLine
+  - SourceFooter
+  - DualMarkUnderline
+
+forbidden:
+  - VO
+  - missing citations on chronicle claims
+  - emoji
+  - breaking stick-figure consistency mid-episode
+
+fits_topics:
+  - textbook vs history
+  - dynastic decline / personnel
+  - long-causal irony

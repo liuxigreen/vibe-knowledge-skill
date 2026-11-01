@@ -1,0 +1,15 @@
+{
+  "slug": "zhongshan-learn-fast",
+  "num": "08",
+  "en": "Learn Fast Duo",
+  "cn": "双色学得快",
+  "category_en": "Story & Scene",
+  "category_cn": "人物故事",
+  "line": "Two-tone characters stage metacognition contrasts.",
+  "line_cn": "双色角色对照，演元认知差异。",
+  "uses": [
+    "Learning",
+    "Dual role fable"
+  ],
+  "library": "vibe-knowledge-skill"
+}

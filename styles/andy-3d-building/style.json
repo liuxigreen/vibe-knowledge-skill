@@ -1,0 +1,15 @@
+{
+  "slug": "andy-3d-building",
+  "num": "12",
+  "en": "3D Building Rise",
+  "cn": "三维筑楼",
+  "category_en": "Silent Diagram",
+  "category_cn": "静音图解",
+  "line": "Construction / building rise as silent diagram.",
+  "line_cn": "筑楼生长作静音图解。",
+  "uses": [
+    "Construction",
+    "3D sim"
+  ],
+  "library": "vibe-knowledge-skill"
+}

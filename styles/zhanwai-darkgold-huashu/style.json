@@ -1,0 +1,14 @@
+{
+  "slug": "zhanwai-darkgold-huashu",
+  "num": "24",
+  "en": "Zhanwai Twin Diff",
+  "cn": "站外暗金 twin 备注",
+  "category_en": "Notes",
+  "category_cn": "备注",
+  "line": "DIFF only — alias into xiaomo-darkgold-disarm; do not ship a second VO yaml.",
+  "line_cn": "仅 DIFF：并入 xiaomo-darkgold-disarm，勿另开 VO YAML。",
+  "uses": [
+    "Alias note"
+  ],
+  "library": "vibe-knowledge-skill"
+}
