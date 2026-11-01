@@ -19,8 +19,10 @@
 ### 方式二：clone
 
 ```sh
-git clone https://github.com/liuxigreen/vibe-knowledge-skill.git
+git clone --recurse-submodules https://github.com/liuxigreen/vibe-knowledge-skill.git
 cd vibe-knowledge-skill
+# 若已 clone 过但没拉子模块：
+# git submodule update --init --recursive
 ```
 
 把仓库根当作 `$LIB`。
@@ -38,6 +40,16 @@ cd vibe-knowledge-skill
 | `tools/` | Award 校验等 |
 | `plugin/skills/` | 可安装 skill |
 | `core/` | 渲染约定 stub |
+| `vendor/lemo-opuscar/` | **上游 Lemomo（lemo-opuscar）子模块**：可参考或直接用他们的 STYLE.md / demo 代码（黑板课、孟菲斯、桌面穿梭等） |
+
+## 与 Lemomo / lemo-opuscar
+
+- 本库 `styles/` = **Vibe知识大赏** 蒸馏底座（Award / 人物故事 KEEP）。
+- `vendor/lemo-opuscar/` = 上游 [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) 工具箱（MIT），钉死提交见 `.gitmodules` + `git submodule status`。
+- **可以参考，也可以直接按他们的模版拍**（chalkboard、memphis-diorama、desktop-flythrough…）——拍前明确选「我们的 distill 车道」还是「lemo 原版 STYLE.md+demo」。
+- **勿把 Lemomo demo / 成片说成我们的作品**；保留其 LICENSE 署名。
+- 同名 slug 对照：[`styles/_LEMO-BRIDGE.md`](styles/_LEMO-BRIDGE.md)。
+
 
 ## 风格索引
 

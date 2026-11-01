@@ -61,3 +61,7 @@ Copy or link:
 - `plugin/skills/vibe-topic-pipeline/`
 
 into the agent's managed-skills / workflows. Then follow [`AGENTS.md`](AGENTS.md).
+
+## Lemomo submodule
+
+Upstream toolbox lives at `vendor/lemo-opuscar/` (git submodule). Init: `git submodule update --init --recursive`. Overlap bridge: `styles/_LEMO-BRIDGE.md`.

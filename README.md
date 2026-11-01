@@ -19,8 +19,10 @@ Then read [`AGENTS.md`](AGENTS.md).
 ### Clone
 
 ```sh
-git clone https://github.com/liuxigreen/vibe-knowledge-skill.git
+git clone --recurse-submodules https://github.com/liuxigreen/vibe-knowledge-skill.git
 cd vibe-knowledge-skill
+# If already cloned without submodules:
+# git submodule update --init --recursive
 ```
 
 Treat the repo root as `$LIB`.
@@ -38,6 +40,16 @@ Treat the repo root as `$LIB`.
 | `tools/` | Award scripts |
 | `plugin/skills/` | Installable skills |
 | `core/` | Render-convention stub |
+| `vendor/lemo-opuscar/` | **Upstream Lemomo (lemo-opuscar) submodule** — reference or film directly from their STYLE.md / demo code |
+
+## Lemomo / lemo-opuscar
+
+- Our `styles/` = **Vibe知识大赏** distilled bases (Award / story KEEP).
+- `vendor/lemo-opuscar/` = upstream [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) (MIT), pinned commit via submodule.
+- You may **reference or shoot with their templates** (chalkboard, memphis-diorama, desktop-flythrough, …). Pick explicitly: our distill/Award lane vs their STYLE.md+demo.
+- **Do not claim Lemomo demos as ours**; keep their LICENSE attribution.
+- Overlapping slugs: [`styles/_LEMO-BRIDGE.md`](styles/_LEMO-BRIDGE.md).
+
 
 ## Styles
 

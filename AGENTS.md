@@ -12,6 +12,7 @@ This repository is a **library of knowledge-film styles** for the Vibe知识大�
 | Tool / path conventions | [`core/README.md`](core/README.md) |
 | User wants their own style folder | [`MY-STYLES.md`](MY-STYLES.md) |
 | Adding a style to this library (owner) | [`MAINTAINING.md`](MAINTAINING.md) |
+| Lemomo templates (reference / direct use) | [`vendor/lemo-opuscar/`](vendor/lemo-opuscar/) · [`styles/_LEMO-BRIDGE.md`](styles/_LEMO-BRIDGE.md) |
 
 **Films outside `styles/` are the user's.** Do not watermark. Do not edit library styles while shooting an episode.
 
@@ -42,6 +43,19 @@ Library styles (see styles/README.md for the table):
 - **Craft Grammar · 工艺语法**: chalkboard, circuit-board, circuit-board-pcb, countdown-split, desktop-flythrough, game-show, isometric-picture-book, memphis-diorama, printed-long-take, transit-map
 - **Notes · 备注**: zhanwai-darkgold-huashu (alias DIFF → xiaomo-darkgold-disarm)
 <!-- style-list:end -->
+
+## Lemomo upstream (`vendor/lemo-opuscar`)
+
+Pinned **git submodule**: [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) (MIT / LemoLab). Init with `git submodule update --init --recursive` if the folder is empty.
+
+| Lane | Path | Use when |
+|---|---|---|
+| **Ours** | `styles/<slug>/` | Vibe知识大赏 distill + Award / story KEEP |
+| **Lemomo** | `vendor/lemo-opuscar/styles/<slug>/` (+ their `DIRECTOR.md` / `TECHNIQUE.md` / `plugin/`) | User wants that **look** as Lemomo ships it — reference **or** film from their STYLE.md + demo code |
+
+- Offer Lemomo when the brief fits chalkboard / memphis-diorama / desktop-flythrough / etc., or when the user asks for "lemo / lemomo 模版".
+- **Same slug, two folders**: ours = distill/Award lane; lemo = upstream STYLE.md+demo. Ask which; never mix silently. Bridge table: [`styles/_LEMO-BRIDGE.md`](styles/_LEMO-BRIDGE.md).
+- Attribution: keep Lemomo LICENSE; **do not claim their demos or films as Vibe作品**.
 
 ## Workflow
 

@@ -55,3 +55,11 @@ Craft stays Vibe知识大赏 (九项 distill · G0–G7 · story KEEP). Layout m
 | Style | 风格 | Folder | One line |
 |---|---|---|---|
 | Zhanwai Twin Diff | 站外暗金 twin 备注 | [`zhanwai-darkgold-huashu`](zhanwai-darkgold-huashu/STYLE.md) | 仅 DIFF：并入 xiaomo-darkgold-disarm，勿另开 VO YAML。 |
+
+## Lemomo vs ours · 上游对照
+
+- **`styles/`（本目录）** = Vibe知识大赏蒸馏底座（Award / 人物故事）。
+- **`../vendor/lemo-opuscar/styles/`** = Lemomo 原版 STYLE.md + demo（可参考或直接拍）。
+- 同名 slug（chalkboard、memphis-diorama、desktop-flythrough…）见 [`_LEMO-BRIDGE.md`](_LEMO-BRIDGE.md)：选车道时说清楚，勿 silently 混用。
+- 署名 MIT；勿把 Lemomo demo 说成我们的成片。
+
