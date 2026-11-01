@@ -44,7 +44,7 @@
 | 全片逐秒动势表 | SOFT | 已锁 densest 五段；中段过渡拍未逐秒 |
 | BGM 曲名版权核验 | SOFT | 听轨确认无 VO；曲名仍用 we-never 工作床 |
 | IsoScanner 道具入库 | SOFT | 源 ~6–8s 有扫描仪拍；样片用 BrainOutline 代替 |
-| 长片 beat 加密样例 | SOFT | 规则已写，无 5–15 min 样片 |
+| 长片 beat 加密样例 | SOFT | 规则已写，无长样片（目标已改为随拍数 ~45s–3min） |
 | ep2《美丽的神话》 | 挂起 | 同色板更多 A/B 音频 UI — 另开 props，不回 VO |
 
 ## Silent 10s sample Gate v5（未重跑）

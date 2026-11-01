@@ -45,7 +45,7 @@
 | 字阶精确 OCR bbox | SOFT | 表内「约」；未做像素级量字 |
 | 全片逐秒动势 | SOFT | 已锁五段；其余层例未逐秒 |
 | BGM 版权核验 | SOFT | we-never 工作床 |
-| 长片 beat 加密样例 | SOFT | 规则已写，无 5–15 min 样片 |
+| 长片 beat 加密样例 | SOFT | 规则已写，无长样片（目标已改为随拍数 ~45s–3min） |
 | zhanwai 目录 | 挂起薄 | 只留 DIFF；新 ep 一律 `base: xiaomo-darkgold-disarm` |
 
 ## Silent 10s sample Gate v5（未重跑）

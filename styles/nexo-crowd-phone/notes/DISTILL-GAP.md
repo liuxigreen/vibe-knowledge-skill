@@ -36,7 +36,7 @@
 | 数据拍 timed 动势（~15s Pew+栅格） | SOFT | 签名但次密；episode 需要时再锁 |
 | 翻盘拍全构图（~45s） | SOFT | 叙事已覆盖；全构图可选 |
 | BGM 曲名版权核验 | SOFT | 听轨确认无 VO；曲名仍用 we-never 工作床 |
-| 长片 beat 加密样例 | SOFT | 规则已写，无 5–15 min 样片 |
+| 长片 beat 加密样例 | SOFT | 规则已写，无长样片（目标已改为随拍数 ~45s–3min） |
 
 ## Silent 10s sample Gate（未重跑）
 
