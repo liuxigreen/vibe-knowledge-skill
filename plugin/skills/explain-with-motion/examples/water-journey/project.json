@@ -1,0 +1,124 @@
+{
+  "duration": 10,
+  "fps": 30,
+  "render": {
+    "scene": "scene.py",
+    "width": 1280,
+    "height": 720,
+    "seed": 42,
+    "preview_times": [
+      0.6,
+      2.2,
+      3.6,
+      5.1,
+      6.8,
+      9.3
+    ]
+  },
+  "shots": [
+    {
+      "id": "terrain",
+      "t0": 0,
+      "t1": 3.2
+    },
+    {
+      "id": "city",
+      "t0": 2.65,
+      "t1": 6.25,
+      "transition_in": true
+    },
+    {
+      "id": "cup",
+      "t0": 5.7,
+      "t1": 10,
+      "transition_in": true
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "text": "拧开之前",
+      "t0": 0,
+      "t1": 2.65,
+      "role": "title"
+    },
+    {
+      "id": "intro",
+      "text": "水，先走过一段旅程。",
+      "t0": 0,
+      "t1": 2.65,
+      "role": "body"
+    },
+    {
+      "id": "source",
+      "text": "水源",
+      "t0": 0,
+      "t1": 2.65,
+      "role": "label"
+    },
+    {
+      "id": "plant",
+      "text": "处理设施",
+      "t0": 0,
+      "t1": 2.65,
+      "role": "label"
+    },
+    {
+      "id": "city",
+      "text": "处理之后，进入城市。",
+      "t0": 3.2,
+      "t1": 5.7,
+      "role": "body"
+    },
+    {
+      "id": "process",
+      "text": "净化 · 消毒",
+      "t0": 3.2,
+      "t1": 5.7,
+      "role": "label"
+    },
+    {
+      "id": "pipes",
+      "text": "地下管网",
+      "t0": 3.2,
+      "t1": 5.7,
+      "role": "label"
+    },
+    {
+      "id": "cup",
+      "text": "最后，来到你的杯子。",
+      "t0": 6.25,
+      "t1": 10,
+      "role": "body"
+    },
+    {
+      "id": "title",
+      "text": "一滴水的旅程",
+      "t0": 7.5,
+      "t1": 10,
+      "role": "title"
+    },
+    {
+      "id": "note",
+      "text": "供水旅程示意 · 地形、距离与时间经压缩",
+      "t0": 0,
+      "t1": 10,
+      "role": "micro"
+    }
+  ],
+  "events": [
+    {
+      "id": "stream_reaches_glass",
+      "t": 6.85
+    },
+    {
+      "id": "level_rises",
+      "t": 6.85,
+      "requires": [
+        "stream_reaches_glass"
+      ]
+    }
+  ],
+  "status": "concept example, not a complete water treatment animation or validated target-style match",
+  "text_manifest_scope": "all drawn text blocks; actual pixel readability requires separate visual audit"
+}

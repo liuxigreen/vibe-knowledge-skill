@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "os": "Windows",
+  "python": "3.12.10",
+  "Pillow": "13.0.0",
+  "numpy": "2.5.4",
+  "ffmpeg": "8.1.2",
+  "unit_tests": 7,
+  "plan_check": "passed",
+  "example_preview": "rendered and viewed 6 frames",
+  "full_example": "rendered 10s 1280x720 30fps 300 frames, no audio",
+  "full_decode": "passed",
+  "frame_order_determinism": "same hash at t1 before and after t2.9/t6",
+  "upstream_lemo_execution": "not installed or executed",
+  "cross_platform_clean_environment": "not tested",
+  "visual_style_quality": "concept only; not target reference quality"
+}
